@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inspektor Gadget CI Test Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px; /* Increase padding */
+            text-align: left;
+            font-size: 1.5em; /* Increase font size */
+            font-weight: bold; /* Make text bold */
+        }
+
+        th a {
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        td {
+            border: 1px solid black;
+        }
+
+        #mainOnly {
+            margin-bottom: 20px;
+        }
+
+        .pass {
+            background-color: lightgreen;
+        }
+
+        .fail {
+            background-color: lightcoral;
+        }
+
+        .skip {
+            background-color: lightyellow;
+        }
+
+        a.success {
+            color: green;
+        }
+
+        a.failure {
+            color: red;
+        }
+
+        a.skipped {
+            color: yellow;
+        }
+
+        a.cancelled {
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+<h1>Inspektor Gadget CI Test Report</h1>
+<button id="mainOnly">Show Main Only</button>
+<script>
+    function renderTables(data) {
+        var body = document.querySelector("body");
+        // Clear existing tables
+        var existingTables = document.querySelectorAll('table');
+        existingTables.forEach(function(table) {
+            table.remove();
+        });
+
+        // Generate tables using data
+        Object.keys(data).forEach(function (workflowName) {
+            // Create a new table for each workflow
+            var table = document.createElement('table');
+            table.id = workflowName;
+            table.innerHTML = '<thead><tr><th>' + workflowName + '</th></tr></thead><tbody></tbody>';
+            body.appendChild(table);
+
+            var tableHead = table.querySelector("thead tr");
+            var tableBody = table.querySelector("tbody");
+
+            var testMap = {};
+
+            var lastTenJobs = data[workflowName].slice(-10);
+
+            lastTenJobs.forEach(function (job, index) {
+                // Add job ID header
+                var th = document.createElement('th');
+                var a = document.createElement('a');
+                a.href = "https://github.com/inspektor-gadget/inspektor-gadget/actions/runs/" + job.run_id;
+                a.style.display = "block";
+                a.textContent = job.id;
+                a.className = job.summary.conclusion;
+                th.appendChild(a);
+                tableHead.appendChild(th);
+
+                ['pass', 'fail', 'skip'].forEach(function (result) {
+                    if (!job.summary[result]) {
+                        return;
+                    }
+                    job.summary[result].forEach(function (testName) {
+                        if (!testMap[testName]) {
+                            testMap[testName] = {};
+                        }
+                        testMap[testName][index] = result;
+                    });
+                });
+            });
+
+            Object.keys(testMap).forEach(function (testName) {
+                var row = tableBody.insertRow();
+                var cell = row.insertCell();
+                cell.textContent = testName;
+
+                for (var i = 0; i < lastTenJobs.length; i++) {
+                    var cell = row.insertCell();
+                    cell.textContent = testMap[testName][i] || '';
+                    cell.className = testMap[testName][i] || '';
+                }
+            });
+        });
+    }
+
+    fetch('data/workflows.json')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonData) {
+            renderTables(jsonData);
+
+            var button = document.getElementById('mainOnly');
+            button.addEventListener('click', function() {
+                var filteredData = {};
+                Object.keys(jsonData).forEach(function (workflowName) {
+                    var workflowData = jsonData[workflowName];
+                    var filteredWorkflowData = workflowData.filter(function(job) {
+                        return job.ref_name === 'main';
+                    });
+                    if (filteredWorkflowData.length > 0) {
+                        filteredData[workflowName] = filteredWorkflowData;
+                    }
+                });
+
+                renderTables(filteredData);
+            });
+        });
+</script>
+</body>
+</html>
