@@ -93,7 +93,8 @@
                 // Add job ID header
                 var th = document.createElement('th');
                 var a = document.createElement('a');
-                a.href = "https://github.com/inspektor-gadget/inspektor-gadget/actions/runs/" + job.run_id;
+                var attempt = job.id.split('_')[1]
+                a.href = "https://github.com/inspektor-gadget/inspektor-gadget/actions/runs/" + job.run_id + "/attempts/" + attempt;
                 a.style.display = "block";
                 a.textContent = job.id;
                 a.className = job.summary.conclusion;
