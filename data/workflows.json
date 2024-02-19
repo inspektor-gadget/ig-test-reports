@@ -1,65 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10279_1",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
-      "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10282_1",
       "run_id": "7871871908",
       "ref_name": "main",
@@ -5924,17 +5865,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10279_2",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
       "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
       },
       "summary": {
         "conclusion": "success",
@@ -5963,15 +5902,15 @@
           "TestTraceTcpconnect_latency",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -5985,7 +5924,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -11865,17 +11806,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10279_1",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
       "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
       },
       "summary": {
         "conclusion": "success",
@@ -11904,29 +11843,31 @@
           "TestTraceTcpconnect_latency",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -17791,43 +17732,31 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10279_3",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
       "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestPrometheus/CounterMetrics",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -17835,33 +17764,36 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -24484,77 +24416,25 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
+      "pull_request": {
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
     }
   ],
   "test-integration-minikube_cri-o": [
-    {
-      "id": "10279_3",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
-      "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestPrometheus/CounterMetrics",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceExec",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTcp",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -31158,77 +31038,25 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
+      "pull_request": {
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
     }
   ],
   "test-integration-minikube_docker": [
-    {
-      "id": "10279_3",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
-      "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestPrometheus/CounterMetrics",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceExec",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTcp",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -37850,32 +37678,25 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10279_1",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
       "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
       },
       "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceNetwork"
-        ],
+        "conclusion": "failure",
+        "pass": null,
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -40152,17 +39973,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10279_1",
-      "run_id": "7867296929",
-      "ref_name": "2489/merge",
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
       "pull_request": {
-        "id": "2489",
-        "author": "dependabot[bot]",
-        "title": "ci: bump golangci/golangci-lint-action from 3.7.0 to 4.0.0"
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
       },
       "summary": {
         "conclusion": "success",
@@ -40177,7 +39996,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10282_1",
       "run_id": "7871871908",
@@ -42439,6 +42260,29 @@
         "id": "2132",
         "author": "blanquicet",
         "title": "[WIP] gadgets/run: Add support for toppers and implement `top file`"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10376_1",
+      "run_id": "7965423630",
+      "ref_name": "2517/merge",
+      "pull_request": {
+        "id": "2517",
+        "author": "mauriciovasquezbernal",
+        "title": "Mount filesystems by default when running in a container"
       },
       "summary": {
         "conclusion": "success",
