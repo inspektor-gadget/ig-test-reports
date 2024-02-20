@@ -1,65 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
-      "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10287_1",
       "run_id": "7878045886",
       "ref_name": "main",
@@ -5923,20 +5864,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
       "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
@@ -5952,6 +5891,7 @@
           "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
+          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
@@ -5961,12 +5901,12 @@
           "TestTraceTcpconnect_latency",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
@@ -5978,14 +5918,14 @@
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": [
-          "TestTraceNetwork"
-        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10287_1",
       "run_id": "7878045886",
@@ -11865,17 +11805,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
       "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
         "conclusion": "success",
@@ -11904,15 +11842,15 @@
           "TestTraceTcpconnect_latency",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -11926,7 +11864,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10287_1",
       "run_id": "7878045886",
@@ -17791,43 +17731,31 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
       "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestPrometheus/CounterMetrics",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -17835,13 +17763,14 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
@@ -17861,7 +17790,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10287_1",
       "run_id": "7878045886",
@@ -24432,17 +24363,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
       "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
         "conclusion": "success",
@@ -24452,7 +24381,6 @@
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
-          "TestPrometheus/CounterMetrics",
           "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
@@ -24483,6 +24411,12 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -24490,19 +24424,16 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10287_1",
       "run_id": "7878045886",
@@ -31056,27 +30987,24 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
       "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
-          "TestPrometheus/CounterMetrics",
           "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
@@ -31104,29 +31032,33 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestPrometheus/CounterMetrics"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10287_2",
       "run_id": "7878045886",
@@ -37696,32 +37628,78 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
+      "pull_request": {
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
+        ],
+        "fail": [
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
     }
   ],
   "test-integration-non-k8s-ig_containerd": [
-    {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
-      "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "10287_1",
       "run_id": "7878045886",
@@ -39998,17 +39976,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10288_1",
-      "run_id": "7878430682",
-      "ref_name": "2445/merge",
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
       "pull_request": {
-        "id": "2445",
-        "author": "mauriciovasquezbernal",
-        "title": "Fix race conditions on container hook and runcfanotify"
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
         "conclusion": "success",
@@ -40023,7 +39999,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10287_1",
       "run_id": "7878045886",
@@ -42285,6 +42263,29 @@
         "id": "2520",
         "author": "flyth",
         "title": "pkg/oci: add some helper functions for more control over image handling"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10387_1",
+      "run_id": "7972968356",
+      "ref_name": "2521/merge",
+      "pull_request": {
+        "id": "2521",
+        "author": "flyth",
+        "title": "add btfhelpers package"
       },
       "summary": {
         "conclusion": "success",
