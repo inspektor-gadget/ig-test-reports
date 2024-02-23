@@ -60,65 +60,6 @@
       }
     },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10325_1",
       "run_id": "7905720748",
       "ref_name": "citest/mauricio/for-eks-delete",
@@ -5970,13 +5911,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -5985,6 +5924,8 @@
       "summary": {
         "conclusion": "success",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
@@ -6007,6 +5948,13 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList",
           "TestTopTCP/StartAndStop",
@@ -6017,21 +5965,16 @@
           "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestTopFile/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10323_1",
       "run_id": "7905160299",
@@ -11963,13 +11906,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -11978,6 +11919,8 @@
       "summary": {
         "conclusion": "success",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
@@ -12000,8 +11943,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
@@ -12017,14 +11958,18 @@
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10323_1",
       "run_id": "7905160299",
@@ -17923,13 +17868,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -17938,27 +17881,20 @@
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -17966,13 +17902,9 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -17980,20 +17912,26 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10325_1",
       "run_id": "7905720748",
@@ -24404,13 +24342,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -24462,19 +24398,21 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10323_1",
       "run_id": "7905160299",
@@ -30921,13 +30859,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -30971,12 +30907,6 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
@@ -30984,14 +30914,22 @@
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10325_1",
       "run_id": "7905720748",
@@ -37406,13 +37344,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -37421,17 +37357,64 @@
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10323_1",
       "run_id": "7905160299",
@@ -39708,13 +39691,11 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10323_1",
-      "run_id": "7905160299",
-      "ref_name": "main",
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
       "pull_request": {
         "id": "",
         "author": "",
@@ -39733,7 +39714,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10323_1",
       "run_id": "7905160299",
@@ -41993,6 +41976,29 @@
         "id": "2531",
         "author": "eiffel-fl",
         "title": "Use BTF to check block_rq_insert arguments"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -47938,6 +47944,74 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
+        ],
+        "fail": null,
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
     }
   ],
   "test-integration-aks_AzureLinux-arm64": [
@@ -53827,6 +53901,74 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
+        ],
+        "fail": null,
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
     }
   ],
   "test-integration-aks_Ubuntu-amd64": [
@@ -59611,6 +59753,72 @@
           "TestRunSchedCLS",
           "TestRunSnapshotProcess"
         ],
+        "skip": [
+          "TestTopBlockIO",
+          "TestTopEbpf"
+        ]
+      }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO",
           "TestTopEbpf"
@@ -65497,6 +65705,74 @@
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout"
+        ],
+        "fail": null,
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
@@ -71621,6 +71897,74 @@
           "TestRunTraceTcp",
           "TestTraceloop"
         ],
+        "skip": [
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceCapabilities"
+        ]
+      }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
+        ],
+        "fail": null,
         "skip": [
           "TestSnapshotSocket",
           "TestTopBlockIO",
@@ -78124,6 +78468,72 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestTopBlockIO",
+          "TestTopEbpf",
+          "TestTraceNetwork"
+        ]
+      }
+    },
+    {
+      "id": "10422_1",
+      "run_id": "8015781796",
+      "ref_name": "citest/francis/eks-biolatency",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
