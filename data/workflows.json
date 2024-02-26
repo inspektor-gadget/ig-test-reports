@@ -1,67 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10343_1",
-      "run_id": "7932710018",
-      "ref_name": "2398/merge",
-      "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10344_1",
       "run_id": "7932890608",
       "ref_name": "2398/merge",
@@ -6009,20 +5948,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10343_1",
-      "run_id": "7932710018",
-      "ref_name": "2398/merge",
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -6034,8 +5971,6 @@
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
@@ -6048,31 +5983,36 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsHost"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10344_1",
       "run_id": "7932890608",
@@ -12037,20 +11977,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10343_1",
-      "run_id": "7932710018",
-      "ref_name": "2398/merge",
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -12062,8 +12000,6 @@
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
@@ -12076,13 +12012,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
@@ -12092,15 +12021,27 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsHost"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10344_1",
       "run_id": "7932890608",
@@ -18037,41 +17978,31 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10344_1",
-      "run_id": "7932890608",
-      "ref_name": "2398/merge",
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
       },
       "summary": {
         "conclusion": "failure",
         "pass": [
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -18079,14 +18010,18 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -18094,21 +18029,20 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": [
-          "TestAdviseNetworkpolicy"
+          "TestTraceDns",
+          "TestTraceDnsHost"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10345_1",
       "run_id": "7933111440",
@@ -24520,20 +24454,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10343_1",
-      "run_id": "7932710018",
-      "ref_name": "2398/merge",
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -24554,7 +24486,6 @@
           "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -24570,6 +24501,9 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -24580,17 +24514,18 @@
           "TestPrometheus/CounterMetrics",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestTopFile/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10344_1",
       "run_id": "7932890608",
@@ -31038,17 +30973,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10344_1",
-      "run_id": "7932890608",
-      "ref_name": "2398/merge",
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
       },
       "summary": {
         "conclusion": "failure",
@@ -31058,6 +30991,10 @@
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
           "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
@@ -31068,7 +31005,6 @@
           "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -31076,6 +31012,7 @@
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
+          "TestTraceSni",
           "TestTraceTcp",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
@@ -31083,7 +31020,12 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -31091,25 +31033,18 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": [
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestTraceSni"
+          "TestTraceDns"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10345_1",
       "run_id": "7933111440",
@@ -37526,32 +37461,78 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
+      "pull_request": {
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+        ],
+        "fail": [
+          "TestTraceDns"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
     }
   ],
   "test-integration-non-k8s-ig_containerd": [
-    {
-      "id": "10343_1",
-      "run_id": "7932710018",
-      "ref_name": "2398/merge",
-      "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "10344_1",
       "run_id": "7932890608",
@@ -39828,32 +39809,33 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10343_1",
-      "run_id": "7932710018",
-      "ref_name": "2398/merge",
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestFilterByContainerName",
           "TestWatchContainers",
           "TestSnapshotProcess",
           "TestTopEbpf",
-          "TestTraceDns",
           "TestTraceNetwork"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns"
+        ],
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10344_1",
       "run_id": "7932890608",
@@ -42125,6 +42107,30 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10452_1",
+      "run_id": "8055040615",
+      "ref_name": "2544/merge",
+      "pull_request": {
+        "id": "2544",
+        "author": "mauriciovasquezbernal",
+        "title": "dns: Parse packet in user space"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceNetwork"
+        ],
+        "fail": [
+          "TestTraceDns"
+        ],
         "skip": null
       }
     }
