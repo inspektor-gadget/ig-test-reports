@@ -1,67 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10396_1",
       "run_id": "7989286970",
       "ref_name": "main",
@@ -6105,17 +6044,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
@@ -6147,12 +6084,12 @@
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -6168,7 +6105,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10396_1",
       "run_id": "7989286970",
@@ -12225,17 +12164,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
@@ -12288,7 +12225,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10396_1",
       "run_id": "7989286970",
@@ -18307,41 +18246,39 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestProfileBio",
+          "TestTraceExecHost",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Interval=Timeout"
+        ],
+        "fail": [
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
+          "TestProfileTCPRTT",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
+          "TestTopFile",
+          "TestTopTCP",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -18350,34 +18287,17 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestTraceTcpconnect_latency"
         ],
-        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10396_1",
       "run_id": "7989286970",
@@ -25030,17 +24950,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10394_1",
-      "run_id": "7982269124",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
@@ -25080,12 +24998,6 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -25093,14 +25005,22 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10395_1",
       "run_id": "7987816153",
@@ -31794,17 +31714,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
@@ -31864,7 +31782,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10396_1",
       "run_id": "7989286970",
@@ -38519,32 +38439,77 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10396_1",
       "run_id": "7989286970",
@@ -40821,17 +40786,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10395_1",
-      "run_id": "7987816153",
-      "ref_name": "main",
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
@@ -40846,7 +40809,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10396_1",
       "run_id": "7989286970",
@@ -43111,6 +43076,29 @@
         "id": "2132",
         "author": "blanquicet",
         "title": "gadgets/run: Add support for toppers and implement `top file`"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10502_1",
+      "run_id": "8087690506",
+      "ref_name": "2546/merge",
+      "pull_request": {
+        "id": "2546",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Replace context structs for tracepoint/syscall programs"
       },
       "summary": {
         "conclusion": "success",
