@@ -1,65 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
-      "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10372_1",
       "run_id": "7963211132",
       "ref_name": "2398/merge",
@@ -6054,21 +5995,21 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
+      "id": "10476_1",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
@@ -6091,31 +6032,33 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10372_1",
       "run_id": "7963211132",
@@ -12126,21 +12069,21 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
+      "id": "10476_2",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
@@ -12163,14 +12106,12 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
@@ -12180,14 +12121,18 @@
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10372_1",
       "run_id": "7963211132",
@@ -18154,42 +18099,33 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
+      "id": "10476_1",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -18197,34 +18133,36 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10372_1",
       "run_id": "7963211132",
@@ -24755,25 +24693,78 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10370_1",
-      "run_id": "7960970599",
-      "ref_name": "2517/merge",
+      "id": "10476_2",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "failure",
-        "pass": null,
-        "fail": null,
-        "skip": null
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
+        ],
+        "fail": [
+          "TestTraceFsslower"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10371_1",
       "run_id": "7961447305",
@@ -31341,20 +31332,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
+      "id": "10476_2",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -31377,7 +31366,6 @@
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceExec",
-          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
@@ -31391,6 +31379,7 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -31398,7 +31387,6 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout",
@@ -31406,12 +31394,16 @@
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceFsslower"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10372_1",
       "run_id": "7963211132",
@@ -37947,32 +37939,77 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
+      "id": "10476_2",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10372_1",
       "run_id": "7963211132",
@@ -40251,17 +40288,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10371_1",
-      "run_id": "7961447305",
-      "ref_name": "2518/merge",
+      "id": "10476_1",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
       "pull_request": {
-        "id": "2518",
-        "author": "blanquicet",
-        "title": "pkg/run: Don't rely on GADGET_TRACER as it is optional"
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "success",
@@ -40276,7 +40311,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10372_1",
       "run_id": "7963211132",
@@ -42538,6 +42575,29 @@
         "id": "2548",
         "author": "eiffel-fl",
         "title": "pkg/gadgets: Add missing description for --authfile in run."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10476_1",
+      "run_id": "8069801567",
+      "ref_name": "2522/merge",
+      "pull_request": {
+        "id": "2522",
+        "author": "alban",
+        "title": "image build: add annotations in OCI image"
       },
       "summary": {
         "conclusion": "success",
