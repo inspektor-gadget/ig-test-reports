@@ -1,65 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
-      "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10391_1",
       "run_id": "7978487591",
       "ref_name": "main",
@@ -6091,21 +6032,21 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
       "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
@@ -6118,7 +6059,6 @@
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
-          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
@@ -6128,31 +6068,35 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceFsslower"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10391_1",
       "run_id": "7978487591",
@@ -12198,21 +12142,21 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
       "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
@@ -12225,7 +12169,6 @@
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
-          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
@@ -12235,8 +12178,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -12247,19 +12188,25 @@
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceFsslower"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10391_1",
       "run_id": "7978487591",
@@ -18266,25 +18213,71 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
       "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
         "conclusion": "failure",
-        "pass": null,
-        "fail": null,
-        "skip": null
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
+          "TestProfileCpu",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsHost",
+          "TestTraceExec",
+          "TestTraceExecHost",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
+        ],
+        "fail": [
+          "TestTraceFsslower"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10391_1",
       "run_id": "7978487591",
@@ -24932,20 +24925,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10389_1",
-      "run_id": "7977067868",
-      "ref_name": "2398/merge",
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
       "pull_request": {
-        "id": "2398",
-        "author": "burak-ok",
-        "title": "CRI: Enrich with initial PodLabels"
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -24968,7 +24959,6 @@
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceExec",
-          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
@@ -24982,12 +24972,7 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -24995,14 +24980,23 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceFsslower"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10390_1",
       "run_id": "7977109764",
@@ -31640,25 +31634,78 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
       "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
         "conclusion": "failure",
-        "pass": null,
-        "fail": null,
-        "skip": null
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
+        ],
+        "fail": [
+          "TestTraceFsslower"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10391_1",
       "run_id": "7978487591",
@@ -38310,32 +38357,78 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
+      "pull_request": {
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout"
+        ],
+        "fail": [
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestTraceFsslower",
+          "TestTraceSni"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
     }
   ],
   "test-integration-non-k8s-ig_containerd": [
-    {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
-      "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "10391_1",
       "run_id": "7978487591",
@@ -40612,17 +40705,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10390_1",
-      "run_id": "7977109764",
-      "ref_name": "2517/merge",
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
       "pull_request": {
-        "id": "2517",
-        "author": "mauriciovasquezbernal",
-        "title": "Mount filesystems by default when running in a container"
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
         "conclusion": "success",
@@ -40637,7 +40728,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10391_1",
       "run_id": "7978487591",
@@ -42899,6 +42992,29 @@
         "id": "",
         "author": "",
         "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10497_1",
+      "run_id": "8084514169",
+      "ref_name": "2280/merge",
+      "pull_request": {
+        "id": "2280",
+        "author": "alban",
+        "title": "kallsyms: use ebpf alternative when kallsyms not available"
       },
       "summary": {
         "conclusion": "success",
