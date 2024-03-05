@@ -62,67 +62,6 @@
       }
     },
     {
-      "id": "10483_1",
-      "run_id": "8079462225",
-      "ref_name": "2550/merge",
-      "pull_request": {
-        "id": "2550",
-        "author": "flyth",
-        "title": "pkg/columns: publish GetWidthFromKind(reflect.Kind) helper"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10482_1",
       "run_id": "8079343723",
       "ref_name": "main",
@@ -6112,20 +6051,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10483_1",
-      "run_id": "8079462225",
-      "ref_name": "2550/merge",
+      "id": "10580_1",
+      "run_id": "8160013840",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2550",
-        "author": "flyth",
-        "title": "pkg/columns: publish GetWidthFromKind(reflect.Kind) helper"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -6141,6 +6078,7 @@
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
+          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
@@ -6150,15 +6088,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -6167,16 +6096,25 @@
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
+          "TestListContainers/FilteredList",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
         ],
-        "fail": [
-          "TestTraceFsslower"
-        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10483_2",
       "run_id": "8079462225",
@@ -12234,20 +12172,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10483_1",
-      "run_id": "8079462225",
-      "ref_name": "2550/merge",
+      "id": "10580_1",
+      "run_id": "8160013840",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2550",
-        "author": "flyth",
-        "title": "pkg/columns: publish GetWidthFromKind(reflect.Kind) helper"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -12263,6 +12199,7 @@
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
+          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
@@ -12291,14 +12228,14 @@
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": [
-          "TestTraceFsslower"
-        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10483_2",
       "run_id": "8079462225",
@@ -18332,6 +18269,67 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
+        ],
+        "fail": null,
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
+    },
+    {
+      "id": "10580_1",
+      "run_id": "8160013840",
+      "ref_name": "2579/merge",
+      "pull_request": {
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
+          "TestProfileCpu",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsHost",
+          "TestTraceExec",
+          "TestTraceExecHost",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
