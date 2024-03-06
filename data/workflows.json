@@ -1,68 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10495_2",
-      "run_id": "8084131558",
-      "ref_name": "2132/merge",
-      "pull_request": {
-        "id": "2132",
-        "author": "blanquicet",
-        "title": "gadgets/run: Add support for toppers and implement `top file`"
-      },
-      "summary": {
-        "conclusion": "failure",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": [
-          "TestTraceFsslower"
-        ],
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10503_1",
       "run_id": "8087695471",
       "ref_name": "2544/merge",
@@ -6100,17 +6038,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10495_2",
-      "run_id": "8084131558",
-      "ref_name": "2132/merge",
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2132",
-        "author": "blanquicet",
-        "title": "gadgets/run: Add support for toppers and implement `top file`"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "failure",
@@ -6125,18 +6061,23 @@
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
+          "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
-          "TestTraceSni",
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
@@ -6146,25 +6087,22 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
         "fail": [
-          "TestTraceFsslower",
-          "TestTraceNetwork"
+          "TestTraceDns",
+          "TestTraceDnsHost",
+          "TestTraceNetwork",
+          "TestTraceSni"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10503_1",
       "run_id": "8087695471",
@@ -12211,17 +12149,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10495_2",
-      "run_id": "8084131558",
-      "ref_name": "2132/merge",
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2132",
-        "author": "blanquicet",
-        "title": "gadgets/run: Add support for toppers and implement `top file`"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "failure",
@@ -12236,26 +12172,16 @@
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
+          "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
-          "TestTraceSni",
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
@@ -12265,17 +12191,29 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
         "fail": [
-          "TestTraceFsslower"
+          "TestTraceDns",
+          "TestTraceDnsHost",
+          "TestTraceNetwork",
+          "TestTraceSni"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10503_1",
       "run_id": "8087695471",
@@ -18303,56 +18241,48 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10499_1",
-      "run_id": "8087282423",
-      "ref_name": "2555/merge",
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2555",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Update fsslower to look for open event instead of read"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "failure",
         "pass": [
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -18360,21 +18290,22 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": [
-          "TestAdviseNetworkpolicy"
+          "TestTraceDns",
+          "TestTraceDnsHost",
+          "TestTraceNetwork",
+          "TestTraceSni"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10495_2",
       "run_id": "8084131558",
@@ -25150,22 +25081,19 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10499_1",
-      "run_id": "8087282423",
-      "ref_name": "2555/merge",
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2555",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Update fsslower to look for open event instead of read"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
@@ -25173,54 +25101,59 @@
           "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
+          "TestRunTopFile",
           "TestRunTraceMount",
           "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
-          "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestScript",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
-          "TestTraceSni",
           "TestTraceTcp",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": null,
+        "fail": [
+          "TestAdviseNetworkpolicy",
+          "TestRunTraceSni",
+          "TestTraceDns",
+          "TestTraceNetwork",
+          "TestTraceSni"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10495_2",
       "run_id": "8084131558",
@@ -32000,22 +31933,19 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10499_1",
-      "run_id": "8087282423",
-      "ref_name": "2555/merge",
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2555",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Update fsslower to look for open event instead of read"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
@@ -32023,54 +31953,59 @@
           "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
+          "TestRunTopFile",
           "TestRunTraceMount",
           "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
-          "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestScript",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
-          "TestTraceSni",
           "TestTraceTcp",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": null,
+        "fail": [
+          "TestAdviseNetworkpolicy",
+          "TestRunTraceSni",
+          "TestTraceDns",
+          "TestTraceNetwork",
+          "TestTraceSni"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10495_2",
       "run_id": "8084131558",
@@ -38860,32 +38795,79 @@
           "TestTopBlockIO"
         ]
       }
+    },
+    {
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
+      "pull_request": {
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics"
+        ],
+        "fail": [
+          "TestAdviseNetworkpolicy",
+          "TestRunTraceSni",
+          "TestTraceDns",
+          "TestTraceNetwork",
+          "TestTraceSni"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
+      }
     }
   ],
   "test-integration-non-k8s-ig_containerd": [
-    {
-      "id": "10499_1",
-      "run_id": "8087282423",
-      "ref_name": "2555/merge",
-      "pull_request": {
-        "id": "2555",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Update fsslower to look for open event instead of read"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "10495_1",
       "run_id": "8084131558",
@@ -41160,32 +41142,33 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10499_1",
-      "run_id": "8087282423",
-      "ref_name": "2555/merge",
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2555",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Update fsslower to look for open event instead of read"
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestFilterByContainerName",
           "TestWatchContainers",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestTopEbpf"
+        ],
+        "fail": [
           "TestTraceDns",
           "TestTraceNetwork"
         ],
-        "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10495_1",
       "run_id": "8084131558",
@@ -43460,6 +43443,30 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10599_1",
+      "run_id": "8175825085",
+      "ref_name": "2579/merge",
+      "pull_request": {
+        "id": "2579",
+        "author": "alban",
+        "title": "[WIP] trace_dns: switch from perf ringbuf to bpf ringbuf"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf"
+        ],
+        "fail": [
+          "TestTraceDns",
+          "TestTraceNetwork"
+        ],
         "skip": null
       }
     }
