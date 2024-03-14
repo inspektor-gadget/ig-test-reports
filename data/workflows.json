@@ -1,67 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10574_1",
-      "run_id": "8156304123",
-      "ref_name": "2573/merge",
-      "pull_request": {
-        "id": "2573",
-        "author": "mauriciovasquezbernal",
-        "title": "gha: Automatically mark and close stale issues / PRs"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10573_1",
       "run_id": "8156280195",
       "ref_name": "main",
@@ -6112,17 +6051,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10574_1",
-      "run_id": "8156304123",
-      "ref_name": "2573/merge",
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2573",
-        "author": "mauriciovasquezbernal",
-        "title": "gha: Automatically mark and close stale issues / PRs"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -6138,6 +6075,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
@@ -6158,24 +6096,26 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10573_1",
       "run_id": "8156280195",
@@ -12230,17 +12170,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10574_1",
-      "run_id": "8156304123",
-      "ref_name": "2573/merge",
+      "id": "10714_2",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2573",
-        "author": "mauriciovasquezbernal",
-        "title": "gha: Automatically mark and close stale issues / PRs"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -12256,6 +12194,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
@@ -12269,9 +12208,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -12279,21 +12215,26 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10573_1",
       "run_id": "8156280195",
@@ -18334,43 +18275,34 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10569_1",
-      "run_id": "8151245120",
-      "ref_name": "2576/merge",
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2576",
-        "author": "dependabot[bot]",
-        "title": "go: bump golang.org/x/term from 0.17.0 to 0.18.0"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -18378,14 +18310,12 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -18393,19 +18323,23 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10574_1",
       "run_id": "8156304123",
@@ -25255,17 +25189,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10569_1",
-      "run_id": "8151245120",
-      "ref_name": "2576/merge",
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2576",
-        "author": "dependabot[bot]",
-        "title": "go: bump golang.org/x/term from 0.17.0 to 0.18.0"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -25291,6 +25223,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -25303,6 +25236,9 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
@@ -25314,9 +25250,6 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout"
@@ -25326,7 +25259,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10574_1",
       "run_id": "8156304123",
@@ -32178,17 +32113,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10569_1",
-      "run_id": "8151245120",
-      "ref_name": "2576/merge",
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2576",
-        "author": "dependabot[bot]",
-        "title": "go: bump golang.org/x/term from 0.17.0 to 0.18.0"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -32214,6 +32147,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -32226,15 +32160,15 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -32249,7 +32183,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10574_1",
       "run_id": "8156304123",
@@ -39102,32 +39038,79 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10569_1",
-      "run_id": "8151245120",
-      "ref_name": "2576/merge",
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2576",
-        "author": "dependabot[bot]",
-        "title": "go: bump golang.org/x/term from 0.17.0 to 0.18.0"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
-          "TestTraceNetwork"
+          "TestTraceDnsUncompress",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10574_1",
       "run_id": "8156304123",
@@ -41413,17 +41396,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "10569_1",
-      "run_id": "8151245120",
-      "ref_name": "2576/merge",
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2576",
-        "author": "dependabot[bot]",
-        "title": "go: bump golang.org/x/term from 0.17.0 to 0.18.0"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -41433,12 +41414,15 @@
           "TestSnapshotProcess",
           "TestTopEbpf",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceNetwork"
         ],
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "10574_1",
       "run_id": "8156304123",
@@ -43685,6 +43669,30 @@
         "id": "2611",
         "author": "alban",
         "title": "image list: add creation date"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10714_1",
+      "run_id": "8281100802",
+      "ref_name": "2579/merge",
+      "pull_request": {
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
