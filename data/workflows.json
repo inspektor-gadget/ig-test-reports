@@ -1,67 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10629_1",
-      "run_id": "8198945536",
-      "ref_name": "2596/merge",
-      "pull_request": {
-        "id": "2596",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/moby/moby from 25.0.3+incompatible to 25.0.4+incompatible"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10628_1",
       "run_id": "8198944192",
       "ref_name": "2595/merge",
@@ -6148,17 +6087,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10629_1",
-      "run_id": "8198945536",
-      "ref_name": "2596/merge",
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2596",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/moby/moby from 25.0.3+incompatible to 25.0.4+incompatible"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -6174,6 +6111,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
@@ -6211,7 +6149,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10628_1",
       "run_id": "8198944192",
@@ -12302,17 +12242,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10629_1",
-      "run_id": "8198945536",
-      "ref_name": "2596/merge",
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2596",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/moby/moby from 25.0.3+incompatible to 25.0.4+incompatible"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -12328,6 +12266,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
@@ -12348,6 +12287,8 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
@@ -12356,16 +12297,16 @@
           "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
+          "TestTopFile/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10628_1",
       "run_id": "8198944192",
@@ -18440,79 +18381,59 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10629_1",
-      "run_id": "8198945536",
-      "ref_name": "2596/merge",
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2596",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/moby/moby from 25.0.3+incompatible to 25.0.4+incompatible"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestProfileBio",
+          "TestTraceExecHost",
+          "TestTraceOpen",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout"
+        ],
+        "fail": [
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileCpu",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
+          "TestProfileTCPRTT",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
+          "TestTopFile",
+          "TestTopTCP",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
-          "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
-        ],
-        "fail": [
-          "TestRunInsecure",
-          "TestRunTraceOpen"
+          "TestTopEbpf/Interval=Timeout"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10629_2",
       "run_id": "8198945536",
@@ -25397,31 +25318,31 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10629_1",
-      "run_id": "8198945536",
-      "ref_name": "2596/merge",
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2596",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/moby/moby from 25.0.3+incompatible to 25.0.4+incompatible"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
+          "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
           "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
@@ -25431,6 +25352,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -25443,15 +25365,15 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -25461,15 +25383,14 @@
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestPrometheus/CounterMetrics"
         ],
-        "fail": [
-          "TestRunInsecure",
-          "TestRunTraceOpen"
-        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10629_2",
       "run_id": "8198945536",
@@ -32351,31 +32272,31 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10629_1",
-      "run_id": "8198945536",
-      "ref_name": "2596/merge",
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2596",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/moby/moby from 25.0.3+incompatible to 25.0.4+incompatible"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
+          "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
           "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
@@ -32385,6 +32306,7 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -32415,15 +32337,14 @@
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": [
-          "TestRunInsecure",
-          "TestRunTraceOpen"
-        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10629_2",
       "run_id": "8198945536",
@@ -39309,32 +39230,79 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10628_1",
-      "run_id": "8198944192",
-      "ref_name": "2595/merge",
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
       "pull_request": {
-        "id": "2595",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/docker/docker from 25.0.3+incompatible to 25.0.4+incompatible"
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
-          "TestTraceNetwork"
+          "TestTraceDnsUncompress",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10630_1",
       "run_id": "8198946335",
@@ -41634,6 +41602,30 @@
         "id": "2623",
         "author": "eiffel-fl",
         "title": "Makefile: Add target to debug ig using delve."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
+      "pull_request": {
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
@@ -41653,29 +41645,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "10628_1",
-      "run_id": "8198944192",
-      "ref_name": "2595/merge",
-      "pull_request": {
-        "id": "2595",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/docker/docker from 25.0.3+incompatible to 25.0.4+incompatible"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "10630_1",
       "run_id": "8198946335",
       "ref_name": "2597/merge",
@@ -43974,6 +43943,30 @@
         "id": "2623",
         "author": "eiffel-fl",
         "title": "Makefile: Add target to debug ig using delve."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10764_1",
+      "run_id": "8340529770",
+      "ref_name": "2579/merge",
+      "pull_request": {
+        "id": "2579",
+        "author": "alban",
+        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
       },
       "summary": {
         "conclusion": "success",
