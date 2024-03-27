@@ -1,68 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10800_1",
-      "run_id": "8360572070",
-      "ref_name": "2579/merge",
-      "pull_request": {
-        "id": "2579",
-        "author": "alban",
-        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10803_1",
       "run_id": "8361149941",
       "ref_name": "2620/merge",
@@ -6119,17 +6057,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10800_1",
-      "run_id": "8360572070",
-      "ref_name": "2579/merge",
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
       "pull_request": {
-        "id": "2579",
+        "id": "2650",
         "author": "alban",
-        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
@@ -6159,31 +6095,33 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
+          "TestListContainers/FilteredList",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10803_1",
       "run_id": "8361149941",
@@ -12250,20 +12188,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10800_1",
-      "run_id": "8360572070",
-      "ref_name": "2579/merge",
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
       "pull_request": {
-        "id": "2579",
+        "id": "2650",
         "author": "alban",
-        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -12281,7 +12217,6 @@
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
-          "TestTraceMount",
           "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
@@ -12309,12 +12244,16 @@
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceMount"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10803_1",
       "run_id": "8361149941",
@@ -18379,44 +18318,34 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10800_1",
-      "run_id": "8360572070",
-      "ref_name": "2579/merge",
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
       "pull_request": {
-        "id": "2579",
+        "id": "2650",
         "author": "alban",
-        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -18424,14 +18353,9 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -18439,19 +18363,26 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10801_1",
       "run_id": "8360587039",
@@ -25329,17 +25260,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10800_1",
-      "run_id": "8360572070",
-      "ref_name": "2579/merge",
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
       "pull_request": {
-        "id": "2579",
+        "id": "2650",
         "author": "alban",
-        "title": "trace_dns: switch from perf ringbuf to bpf ringbuf"
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
@@ -25401,7 +25330,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10801_1",
       "run_id": "8360587039",
@@ -32264,17 +32195,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10799_1",
-      "run_id": "8359069409",
-      "ref_name": "main",
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2650",
+        "author": "alban",
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
@@ -32336,7 +32265,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10800_1",
       "run_id": "8360572070",
@@ -39224,33 +39155,79 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10801_1",
-      "run_id": "8360587039",
-      "ref_name": "main",
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2650",
+        "author": "alban",
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10800_1",
       "run_id": "8360572070",
@@ -41611,6 +41588,30 @@
         "id": "",
         "author": "",
         "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
+      "pull_request": {
+        "id": "2650",
+        "author": "alban",
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
@@ -41630,30 +41631,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "10801_1",
-      "run_id": "8360587039",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "10800_1",
       "run_id": "8360572070",
       "ref_name": "2579/merge",
@@ -44013,6 +43990,30 @@
         "id": "",
         "author": "",
         "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10918_1",
+      "run_id": "8450485128",
+      "ref_name": "2650/merge",
+      "pull_request": {
+        "id": "2650",
+        "author": "alban",
+        "title": "README.md: update Helm charts badge"
       },
       "summary": {
         "conclusion": "success",
