@@ -1,68 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "10799_1",
-      "run_id": "8359069409",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBio",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
-      }
-    },
-    {
       "id": "10800_1",
       "run_id": "8360572070",
       "ref_name": "2579/merge",
@@ -6124,26 +6062,26 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "10799_1",
-      "run_id": "8359069409",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
         "title": ""
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
+          "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
           "TestProfileBio",
+          "TestProfileCpu",
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
@@ -6162,6 +6100,15 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -6170,24 +6117,16 @@
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Interval=Timeout"
+          "TestListContainers/FilteredList"
         ],
-        "fail": [
-          "TestProfileCpu"
-        ],
+        "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "10800_1",
       "run_id": "8360572070",
@@ -12253,13 +12192,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "10799_1",
-      "run_id": "8359069409",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
@@ -12303,12 +12240,12 @@
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -12317,7 +12254,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "10800_1",
       "run_id": "8360572070",
@@ -18382,44 +18321,34 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10774_1",
-      "run_id": "8343833546",
-      "ref_name": "2612/merge",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
-        "id": "2612",
-        "author": "alban",
-        "title": "trace_mount: add missing fields in gadget metadata"
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -18427,10 +18356,17 @@
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
@@ -18440,21 +18376,16 @@
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "10798_1",
       "run_id": "8358295426",
@@ -25331,20 +25262,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "10774_1",
-      "run_id": "8343833546",
-      "ref_name": "2612/merge",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
-        "id": "2612",
-        "author": "alban",
-        "title": "trace_mount: add missing fields in gadget metadata"
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -25356,7 +25285,6 @@
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
@@ -25372,7 +25300,6 @@
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -25383,12 +25310,7 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -25396,14 +25318,24 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10798_1",
       "run_id": "8358295426",
@@ -32264,20 +32196,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10795_1",
-      "run_id": "8355984575",
-      "ref_name": "2626/merge",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
-        "id": "2626",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/docker/docker from 25.0.4+incompatible to 25.0.5+incompatible"
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -32289,7 +32219,6 @@
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
@@ -32305,7 +32234,6 @@
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -32316,7 +32244,12 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -32324,19 +32257,19 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
-        "fail": null,
+        "fail": [
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "10774_1",
       "run_id": "8343833546",
@@ -39223,33 +39156,80 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "10798_1",
-      "run_id": "8358295426",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
         "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
-        "fail": null,
-        "skip": null
+        "fail": [
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
+        ],
+        "skip": [
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "10799_1",
       "run_id": "8359069409",
@@ -41610,6 +41590,30 @@
         "id": "2649",
         "author": "eiffel-fl",
         "title": "integration: Wait until test-pod was OOMKilled for oomkill related tests"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -41629,30 +41633,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "10798_1",
-      "run_id": "8358295426",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "10799_1",
       "run_id": "8359069409",
       "ref_name": "main",
@@ -44027,13 +44007,11 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-aks_AzureLinux-amd64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
@@ -44042,63 +44020,20 @@
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
+          "TestFilterByContainerName",
+          "TestWatchContainers",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTraceBind",
-          "TestTraceCapabilities",
+          "TestTopEbpf",
           "TestTraceDns",
-          "TestTraceExec",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTcp",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
         ],
         "fail": null,
-        "skip": [
-          "TestTopBlockIO"
-        ]
+        "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-aks_AzureLinux-amd64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -51004,13 +50939,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-aks_AzureLinux-arm64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
@@ -51019,6 +50952,7 @@
       "summary": {
         "conclusion": "failure",
         "pass": [
+          "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
@@ -51026,12 +50960,9 @@
           "TestRunInsecure",
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
-          "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
-          "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestScript",
           "TestSnapshotProcess",
@@ -51039,11 +50970,11 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -51051,7 +50982,9 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -51059,24 +50992,27 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
           "TestTopTcp/StartAndStop",
           "TestTopTcp/Timeout",
           "TestTopTcp/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout"
         ],
         "fail": [
-          "TestAdviseNetworkpolicy"
+          "TestRunTopFile",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestTraceOOMKill"
         ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aks_AzureLinux-arm64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -57940,20 +57876,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-aks_Ubuntu-amd64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
         "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -57961,11 +57895,9 @@
           "TestProfileBlockIO",
           "TestProfileCpu",
           "TestRunInsecure",
-          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
@@ -57976,11 +57908,11 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -57988,6 +57920,15 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
@@ -57995,21 +57936,20 @@
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": null,
+        "fail": [
+          "TestRunSchedCLS",
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
+        ],
         "skip": [
-          "TestTopBlockIO",
-          "TestTopEbpf"
+          "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aks_Ubuntu-amd64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -64671,13 +64611,11 @@
           "TestTopEbpf"
         ]
       }
-    }
-  ],
-  "test-integration-aks_Ubuntu-arm64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
@@ -64686,6 +64624,7 @@
       "summary": {
         "conclusion": "failure",
         "pass": [
+          "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
@@ -64695,7 +64634,6 @@
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
@@ -64706,11 +64644,11 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -64718,15 +64656,6 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -64734,16 +64663,26 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestPrometheus/CounterMetrics",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout"
         ],
         "fail": [
-          "TestAdviseNetworkpolicy"
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
         ],
         "skip": [
-          "TestTopBlockIO"
+          "TestTopBlockIO",
+          "TestTopEbpf"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aks_Ubuntu-arm64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -71635,13 +71574,11 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-aro_aro": [
+    },
     {
-      "id": "10529_1",
-      "run_id": "8108264845",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
@@ -71660,19 +71597,20 @@
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestScript",
           "TestSnapshotProcess",
+          "TestSnapshotSocket",
           "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -71680,6 +71618,15 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -71687,27 +71634,20 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": [
-          "TestRunTraceSignal"
+          "TestRunTraceOOMKill",
+          "TestRunTraceSignal",
+          "TestTraceOOMKill"
         ],
         "skip": [
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceCapabilities"
+          "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aro_aro": [
     {
       "id": "10530_1",
       "run_id": "8108268112",
@@ -78569,13 +78509,11 @@
           "TestTraceCapabilities"
         ]
       }
-    }
-  ],
-  "test-integration-eks_EKS-amd64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
@@ -78600,15 +78538,13 @@
           "TestRunTraceTcp",
           "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
-          "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -78616,7 +78552,15 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -78624,24 +78568,21 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": [
-          "TestRunTraceOOMKill"
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
         ],
         "skip": [
-          "TestTopBlockIO"
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceCapabilities"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-eks_EKS-amd64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -85519,20 +85460,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-eks_EKS-arm64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
         "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -85544,7 +85483,6 @@
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
@@ -85555,11 +85493,11 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -85567,7 +85505,9 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -85575,22 +85515,25 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
+        ],
         "skip": [
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-eks_EKS-arm64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -92472,21 +92415,20 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-gke_GKE-amd64": [
+    },
     {
-      "id": "10518_1",
-      "run_id": "8100774977",
-      "ref_name": "main",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
         "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
+          "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
@@ -92496,7 +92438,6 @@
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
           "TestRunTraceSni",
@@ -92507,10 +92448,11 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceOOMKill",
+          "TestTraceNetwork",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -92518,30 +92460,35 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
+        ],
         "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestTopBlockIO",
-          "TestTopEbpf",
-          "TestTraceNetwork"
+          "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-gke_GKE-amd64": [
     {
       "id": "10529_1",
       "run_id": "8108264845",
@@ -99263,20 +99210,18 @@
           "TestTraceNetwork"
         ]
       }
-    }
-  ],
-  "test-integration-gke_GKE-arm64": [
+    },
     {
-      "id": "10501_1",
-      "run_id": "8087690093",
-      "ref_name": "citest/mauricio/fix-syscall-tracepoints",
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
       "pull_request": {
         "id": "",
         "author": "",
         "title": ""
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
@@ -99286,10 +99231,8 @@
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTraceMount",
-          "TestRunTraceOOMKill",
           "TestRunTraceOpen",
           "TestRunTraceSignal",
-          "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestScript",
           "TestSnapshotProcess",
@@ -99297,10 +99240,10 @@
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
+          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -99308,9 +99251,7 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -99318,12 +99259,19 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestRunTopFile",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestTraceOOMKill"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestTopBlockIO",
@@ -99331,7 +99279,9 @@
           "TestTraceNetwork"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-gke_GKE-arm64": [
     {
       "id": "10517_1",
       "run_id": "8099538316",
@@ -106042,6 +105992,75 @@
         "fail": [
           "TestRunInsecure",
           "TestRunTopFile"
+        ],
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestTopBlockIO",
+          "TestTopEbpf",
+          "TestTraceNetwork"
+        ]
+      }
+    },
+    {
+      "id": "10914_1",
+      "run_id": "8449277825",
+      "ref_name": "citest/francis/integration-oomkill-wait-killed",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+        ],
+        "fail": [
+          "TestRunTraceOOMKill",
+          "TestTraceOOMKill"
         ],
         "skip": [
           "TestAdviseNetworkpolicy",
