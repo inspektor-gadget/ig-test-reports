@@ -1,22 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "11013_1",
-      "run_id": "8482700039",
-      "ref_name": "citest/francis/trace-oomkill-test-cgroup",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "failure",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "11016_1",
       "run_id": "8482798739",
       "ref_name": "2662/merge",
@@ -6068,17 +6052,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "11016_1",
-      "run_id": "8482798739",
-      "ref_name": "2662/merge",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "2662",
-        "author": "eiffel-fl",
-        "title": "wip: integration: Create a cgroup inside oomkill test."
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
         "conclusion": "success",
@@ -6108,6 +6090,15 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -6115,15 +6106,6 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -6132,7 +6114,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "11015_1",
       "run_id": "8482798439",
@@ -12185,17 +12169,15 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "11016_1",
-      "run_id": "8482798739",
-      "ref_name": "2662/merge",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "2662",
-        "author": "eiffel-fl",
-        "title": "wip: integration: Create a cgroup inside oomkill test."
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
         "conclusion": "success",
@@ -12225,15 +12207,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -12241,6 +12214,15 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -12249,7 +12231,9 @@
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "11015_1",
       "run_id": "8482798439",
@@ -18303,59 +18287,44 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "10999_1",
-      "run_id": "8481406397",
-      "ref_name": "citest/francis/trace-oomkill-test-cgroup",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBio",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
+          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
-          "TestTraceTcp",
+          "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -18363,20 +18332,26 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout"
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
-        "fail": [
-          "TestTraceOOMKill"
-        ],
+        "fail": null,
         "skip": [
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "11014_1",
       "run_id": "8482700212",
@@ -25209,22 +25184,26 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "11001_1",
-      "run_id": "8481442705",
-      "ref_name": "2663/merge",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "2663",
-        "author": "eiffel-fl",
-        "title": "ci: Add kvm2 as minikube driver."
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
-        "conclusion": "cancelled",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunTraceMount",
           "TestRunTraceOOMKill",
           "TestRunTraceOpen",
@@ -25240,30 +25219,44 @@
           "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
           "TestTraceOOMKill",
+          "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
           "TestTraceTcp",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout"
         ],
-        "fail": [
-          "TestProfileBlockIO",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestPrometheus/CounterMetrics"
-        ],
+        "fail": null,
         "skip": [
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "10999_1",
       "run_id": "8481406397",
@@ -32143,20 +32136,18 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "10999_1",
-      "run_id": "8481406397",
-      "ref_name": "citest/francis/trace-oomkill-test-cgroup",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -32182,6 +32173,7 @@
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
+          "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
           "TestTraceSni",
@@ -32189,13 +32181,12 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopTcp/StartAndStop",
-          "TestTopTcp/Timeout",
-          "TestTopTcp/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -32203,20 +32194,21 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
+          "TestPrometheus/CounterMetrics",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout"
         ],
-        "fail": [
-          "TestTraceOOMKill"
-        ],
+        "fail": null,
         "skip": [
           "TestRunSnapshotProcess",
           "TestRunTopFile",
           "TestTopBlockIO"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "11014_1",
       "run_id": "8482700212",
@@ -39069,33 +39061,79 @@
           "TestTopBlockIO"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "11013_1",
-      "run_id": "8482700039",
-      "ref_name": "citest/francis/trace-oomkill-test-cgroup",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestScript",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTcp",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTcp/StartAndStop",
+          "TestTopTcp/Timeout",
+          "TestTopTcp/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "11016_1",
       "run_id": "8482798739",
@@ -41468,17 +41506,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "11013_1",
-      "run_id": "8482700039",
-      "ref_name": "citest/francis/trace-oomkill-test-cgroup",
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
         "conclusion": "success",
@@ -41494,7 +41530,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "11016_1",
       "run_id": "8482798739",
@@ -43856,6 +43894,30 @@
         "id": "",
         "author": "",
         "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "11138_1",
+      "run_id": "8572646637",
+      "ref_name": "2687/merge",
+      "pull_request": {
+        "id": "2687",
+        "author": "blanquicet",
+        "title": "trace/open: Compute error and file descriptor fields on eBPF code"
       },
       "summary": {
         "conclusion": "success",
