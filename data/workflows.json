@@ -1,85 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "11340_1",
-      "run_id": "8782969136",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "11335_1",
       "run_id": "8782028716",
       "ref_name": "citest/burak/go1.22.0",
@@ -7863,17 +7784,15 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "11340_1",
-      "run_id": "8782969136",
-      "ref_name": "main",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
         "conclusion": "success",
@@ -7910,15 +7829,15 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -7938,13 +7857,14 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotSocket",
           "TestTopBlockIO",
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "11335_1",
       "run_id": "8782028716",
@@ -15737,20 +15657,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "11340_1",
-      "run_id": "8782969136",
-      "ref_name": "main",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -15769,7 +15687,6 @@
           "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
@@ -15787,16 +15704,18 @@
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceNetwork"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -15812,13 +15731,14 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotSocket",
           "TestTopBlockIO",
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "11335_1",
       "run_id": "8782028716",
@@ -23594,42 +23514,26 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "11322_1",
-      "run_id": "8756985724",
-      "ref_name": "2744/merge",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "2744",
-        "author": "burak-ok",
-        "title": "Bump Go version to 1.22.0"
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestWatchDeletedContainers",
           "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -23640,14 +23544,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -23657,24 +23553,46 @@
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Interval=Timeout"
         ],
-        "fail": null,
-        "skip": [
-          "TestEnrichmentPodLabelExistingPod",
+        "fail": [
           "TestEnrichmentPodLabelNewPod",
           "TestListContainers",
           "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
+          "TestSnapshotProcess",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
+          "TestTraceExec"
+        ],
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
           "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
+          "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "11321_1",
       "run_id": "8756985657",
@@ -31397,17 +31315,15 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "11321_1",
-      "run_id": "8756985657",
-      "ref_name": "citest/burak/go1.22.0",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
         "conclusion": "success",
@@ -31425,7 +31341,6 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
@@ -31444,6 +31359,9 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
@@ -31457,10 +31375,7 @@
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
+          "TestTopTCP/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
@@ -31477,7 +31392,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "11322_1",
       "run_id": "8756985724",
@@ -39203,20 +39120,18 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "11321_1",
-      "run_id": "8756985657",
-      "ref_name": "citest/burak/go1.22.0",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -39225,7 +39140,12 @@
           "TestProfileCpu",
           "TestRunInsecure",
           "TestRunSchedCLS",
-          "TestScript",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
@@ -39239,19 +39159,18 @@
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
+          "TestTraceSni",
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -39259,17 +39178,11 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout"
         ],
-        "fail": [
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestTraceSni"
-        ],
+        "fail": null,
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -39284,7 +39197,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "11322_1",
       "run_id": "8756985724",
@@ -47009,33 +46924,86 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "11322_1",
-      "run_id": "8756985724",
-      "ref_name": "2744/merge",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "2744",
-        "author": "burak-ok",
-        "title": "Bump Go version to 1.22.0"
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "11321_1",
       "run_id": "8756985657",
@@ -49409,17 +49377,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "11322_1",
-      "run_id": "8756985724",
-      "ref_name": "2744/merge",
+      "id": "11461_1",
+      "run_id": "8840309974",
+      "ref_name": "2753/merge",
       "pull_request": {
-        "id": "2744",
-        "author": "burak-ok",
-        "title": "Bump Go version to 1.22.0"
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
       },
       "summary": {
         "conclusion": "success",
@@ -49435,7 +49401,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "11321_1",
       "run_id": "8756985657",
@@ -51791,6 +51759,30 @@
     {
       "id": "11460_1",
       "run_id": "8838991730",
+      "ref_name": "2753/merge",
+      "pull_request": {
+        "id": "2753",
+        "author": "mauriciovasquezbernal",
+        "title": "Implement image-based gadgets examples"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "11461_1",
+      "run_id": "8840309974",
       "ref_name": "2753/merge",
       "pull_request": {
         "id": "2753",
