@@ -1,85 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "11323_1",
-      "run_id": "8758048034",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "11325_1",
       "run_id": "8758393106",
       "ref_name": "citest/burak/go1.22.0-test",
@@ -7889,27 +7810,24 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "11323_1",
-      "run_id": "8758048034",
-      "ref_name": "main",
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
           "TestProfileCpu",
           "TestSnapshotProcess",
           "TestTraceBind",
@@ -7948,7 +7866,9 @@
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestProfileBlockIO"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -7964,13 +7884,14 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotSocket",
           "TestTopBlockIO",
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "11325_1",
       "run_id": "8758393106",
@@ -15795,27 +15716,24 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "11323_1",
-      "run_id": "8758048034",
-      "ref_name": "main",
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
           "TestProfileCpu",
           "TestSnapshotProcess",
           "TestTraceBind",
@@ -15854,7 +15772,9 @@
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestProfileBlockIO"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -15870,13 +15790,14 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotSocket",
           "TestTopBlockIO",
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "11325_1",
       "run_id": "8758393106",
@@ -23680,42 +23601,33 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "11312_1",
-      "run_id": "8754217295",
-      "ref_name": "citest/burak/go1.22.0",
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -23726,7 +23638,12 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
@@ -23737,30 +23654,35 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestProfileBlockIO"
+        ],
         "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
           "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
+          "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "11314_1",
       "run_id": "8754437197",
@@ -31490,25 +31412,22 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "11314_1",
-      "run_id": "8754437197",
-      "ref_name": "main",
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
-          "TestProfileBlockIO",
           "TestProfileCpu",
           "TestRunInsecure",
           "TestRunSchedCLS",
@@ -31518,7 +31437,6 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
@@ -31540,6 +31458,9 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
@@ -31550,12 +31471,11 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
-        "fail": null,
+        "fail": [
+          "TestProfileBlockIO"
+        ],
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -31570,7 +31490,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "11309_1",
       "run_id": "8745170752",
@@ -39302,25 +39224,22 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "11314_1",
-      "run_id": "8754437197",
-      "ref_name": "main",
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
-          "TestProfileBlockIO",
           "TestProfileCpu",
           "TestRunInsecure",
           "TestRunSchedCLS",
@@ -39330,7 +39249,6 @@
           "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
-          "TestScript",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
@@ -39352,12 +39270,12 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
@@ -39367,7 +39285,9 @@
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": null,
+        "fail": [
+          "TestProfileBlockIO"
+        ],
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -39382,7 +39302,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "11309_2",
       "run_id": "8745170752",
@@ -47114,33 +47036,87 @@
           "TestTraceExecHost"
         ]
       }
+    },
+    {
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
+      "pull_request": {
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+        ],
+        "fail": [
+          "TestProfileBlockIO"
+        ],
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
+      }
     }
   ],
   "test-integration-non-k8s-ig_containerd": [
-    {
-      "id": "11309_1",
-      "run_id": "8745170752",
-      "ref_name": "2741/merge",
-      "pull_request": {
-        "id": "2741",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/docker/docker from 26.0.1+incompatible to 26.0.2+incompatible"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "11315_1",
       "run_id": "8755284093",
@@ -49514,17 +49490,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "11309_1",
-      "run_id": "8745170752",
-      "ref_name": "2741/merge",
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
       "pull_request": {
-        "id": "2741",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/docker/docker from 26.0.1+incompatible to 26.0.2+incompatible"
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
         "conclusion": "success",
@@ -49540,7 +49514,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "11315_1",
       "run_id": "8755284093",
@@ -51901,6 +51877,30 @@
         "id": "2707",
         "author": "eiffel-fl",
         "title": "Verify image based gadget"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "11446_1",
+      "run_id": "8830802698",
+      "ref_name": "2542/merge",
+      "pull_request": {
+        "id": "2542",
+        "author": "alban",
+        "title": "profile/block-io: use core type matches relocations"
       },
       "summary": {
         "conclusion": "success",
