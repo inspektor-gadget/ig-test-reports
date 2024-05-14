@@ -1,84 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "11614_1",
-      "run_id": "8986206291",
-      "ref_name": "2804/merge",
-      "pull_request": {
-        "id": "2804",
-        "author": "alban",
-        "title": "container-hook: fix sys_exit_execve from thread"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "11616_1",
       "run_id": "8986218046",
       "ref_name": "2685/merge",
@@ -7763,17 +7685,15 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "11616_1",
-      "run_id": "8986218046",
-      "ref_name": "2685/merge",
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
       "pull_request": {
-        "id": "2685",
-        "author": "alban",
-        "title": "kubernetes: cgroupfs: mount read-only"
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
@@ -7803,15 +7723,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -7819,6 +7730,15 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -7843,7 +7763,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "11612_1",
       "run_id": "8985862835",
@@ -15528,17 +15450,15 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "11614_1",
-      "run_id": "8986206291",
-      "ref_name": "2804/merge",
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
       "pull_request": {
-        "id": "2804",
-        "author": "alban",
-        "title": "container-hook: fix sys_exit_execve from thread"
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
@@ -15568,15 +15488,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -15584,6 +15495,15 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -15608,7 +15528,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "11616_1",
       "run_id": "8986218046",
@@ -23295,41 +23217,34 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "11587_1",
-      "run_id": "8971120118",
-      "ref_name": "v0.28.0",
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileBlockIO",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -23340,11 +23255,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -23352,29 +23262,42 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
           "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
+          "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "11588_1",
       "run_id": "8972322999",
@@ -30960,17 +30883,15 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "11587_1",
-      "run_id": "8971120118",
-      "ref_name": "v0.28.0",
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
@@ -31009,12 +30930,12 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -31039,7 +30960,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "11588_1",
       "run_id": "8972322999",
@@ -38583,6 +38506,83 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout"
+        ],
+        "fail": null,
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
+      }
+    },
+    {
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
+      "pull_request": {
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout"
@@ -38606,83 +38606,6 @@
   ],
   "test-integration-minikube_docker": [
     {
-      "id": "11587_1",
-      "run_id": "8971120118",
-      "ref_name": "v0.28.0",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceExec",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
-        ]
-      }
-    },
-    {
       "id": "11588_1",
       "run_id": "8972322999",
       "ref_name": "2806/merge",
@@ -46281,33 +46204,86 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "11591_1",
-      "run_id": "8972523288",
-      "ref_name": "2797/merge",
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
       "pull_request": {
-        "id": "2797",
-        "author": "mauriciovasquezbernal",
-        "title": "Improve \"CStrings\" handling"
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "11587_1",
       "run_id": "8971120118",
@@ -48677,17 +48653,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "11591_1",
-      "run_id": "8972523288",
-      "ref_name": "2797/merge",
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
       "pull_request": {
-        "id": "2797",
-        "author": "mauriciovasquezbernal",
-        "title": "Improve \"CStrings\" handling"
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
@@ -48703,7 +48677,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "11587_1",
       "run_id": "8971120118",
@@ -51064,6 +51040,30 @@
         "id": "",
         "author": "",
         "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "11721_1",
+      "run_id": "9081710312",
+      "ref_name": "2709/merge",
+      "pull_request": {
+        "id": "2709",
+        "author": "blanquicet",
+        "title": "snapshotters: Support sending and JSON-printing output as an array"
       },
       "summary": {
         "conclusion": "success",
