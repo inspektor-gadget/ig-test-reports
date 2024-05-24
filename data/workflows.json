@@ -1,84 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "11765_1",
-      "run_id": "9109289562",
-      "ref_name": "2855/merge",
-      "pull_request": {
-        "id": "2855",
-        "author": "dependabot[bot]",
-        "title": "go: bump k8s.io/code-generator from 0.30.0 to 0.30.1"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "11764_1",
       "run_id": "9109274666",
       "ref_name": "main",
@@ -7759,20 +7681,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "11764_1",
-      "run_id": "9109274666",
-      "ref_name": "main",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -7787,6 +7707,7 @@
           "TestTraceDns",
           "TestTraceDnsUncompress",
           "TestTraceDnsHost",
+          "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -7798,6 +7719,13 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
@@ -7807,19 +7735,10 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": [
-          "TestTraceExec"
-        ],
+        "fail": null,
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -7840,7 +7759,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "11769_1",
       "run_id": "9110124799",
@@ -15545,17 +15466,15 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "11764_1",
-      "run_id": "9109274666",
-      "ref_name": "main",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
@@ -15595,12 +15514,12 @@
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
@@ -15625,7 +15544,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "11769_1",
       "run_id": "9110124799",
@@ -23308,41 +23229,34 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "11735_1",
-      "run_id": "9093497844",
-      "ref_name": "main",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileBlockIO",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -23353,41 +23267,49 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
         "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
           "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
+          "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "11737_1",
       "run_id": "9093799437",
@@ -31010,17 +30932,15 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "11735_1",
-      "run_id": "9093497844",
-      "ref_name": "main",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
@@ -31062,9 +30982,6 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -31072,7 +30989,10 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestPrometheus/CounterMetrics",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
@@ -31089,7 +31009,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "11737_1",
       "run_id": "9093799437",
@@ -38716,17 +38638,15 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "11735_1",
-      "run_id": "9093497844",
-      "ref_name": "main",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
@@ -38762,23 +38682,23 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
@@ -38795,7 +38715,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "11737_1",
       "run_id": "9093799437",
@@ -46420,33 +46342,86 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "11742_1",
-      "run_id": "9096821655",
-      "ref_name": "2832/merge",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "2832",
-        "author": "mauriciovasquezbernal",
-        "title": "datasource: Allow setting smaller static strings"
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "11743_1",
       "run_id": "9096842126",
@@ -48817,17 +48792,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "11742_1",
-      "run_id": "9096821655",
-      "ref_name": "2832/merge",
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
       "pull_request": {
-        "id": "2832",
-        "author": "mauriciovasquezbernal",
-        "title": "datasource: Allow setting smaller static strings"
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
@@ -48843,7 +48816,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "11743_1",
       "run_id": "9096842126",
@@ -51201,6 +51176,30 @@
         "id": "2894",
         "author": "eiffel-fl",
         "title": "docs: Add documentation on how to sign image-based gadgets."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "11906_1",
+      "run_id": "9222752728",
+      "ref_name": "2881/merge",
+      "pull_request": {
+        "id": "2881",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/prometheus from 0.48.0 to 0.49.0"
       },
       "summary": {
         "conclusion": "success",
