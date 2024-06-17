@@ -1,84 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "12154_1",
-      "run_id": "9380122689",
-      "ref_name": "2968/merge",
-      "pull_request": {
-        "id": "2968",
-        "author": "dependabot[bot]",
-        "title": "go: bump the golang-x group with 3 updates"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "12156_1",
       "run_id": "9380675023",
       "ref_name": "2970/merge",
@@ -7798,20 +7720,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "12154_2",
-      "run_id": "9380122689",
-      "ref_name": "2968/merge",
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
       "pull_request": {
-        "id": "2968",
-        "author": "dependabot[bot]",
-        "title": "go: bump the golang-x group with 3 updates"
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -7823,9 +7743,6 @@
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
@@ -7857,7 +7774,11 @@
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -7878,7 +7799,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "12156_1",
       "run_id": "9380675023",
@@ -15642,20 +15565,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "12156_1",
-      "run_id": "9380675023",
-      "ref_name": "2970/merge",
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
       "pull_request": {
-        "id": "2970",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/containerd/containerd from 1.7.17 to 1.7.18"
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -15667,9 +15588,6 @@
           "TestSnapshotProcess",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
@@ -15692,16 +15610,20 @@
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -15722,7 +15644,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "12155_1",
       "run_id": "9380467720",
@@ -23395,41 +23319,31 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "12114_1",
-      "run_id": "9319899440",
-      "ref_name": "2955/merge",
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
       "pull_request": {
-        "id": "2955",
-        "author": "mauriciovasquezbernal",
-        "title": "dependabot: Disable updating indirect dependencies"
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileBlockIO",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -23440,10 +23354,6 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -23451,30 +23361,46 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost"
+        ],
         "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
           "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
+          "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "12115_1",
       "run_id": "9320006128",
@@ -31089,20 +31015,18 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "12112_1",
-      "run_id": "9319217167",
-      "ref_name": "main",
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -31121,8 +31045,6 @@
           "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -31138,6 +31060,9 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
@@ -31148,12 +31073,12 @@
           "TestProfileTCPRTT/FilterLocalAddr",
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -31168,7 +31093,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "12114_1",
       "run_id": "9319899440",
@@ -38773,20 +38700,18 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "12112_1",
-      "run_id": "9319217167",
-      "ref_name": "main",
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -38805,8 +38730,6 @@
           "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
           "TestTraceExec",
           "TestTraceFsslower",
           "TestTraceMount",
@@ -38819,15 +38742,13 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestPrometheus/CounterMetrics",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -38835,9 +38756,14 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics"
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -38852,7 +38778,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "12114_1",
       "run_id": "9319899440",
@@ -46464,33 +46392,87 @@
           "TestTraceExecHost"
         ]
       }
+    },
+    {
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
+      "pull_request": {
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceMount",
+          "TestRunTraceOOMKill",
+          "TestRunTraceOpen",
+          "TestRunTraceSignal",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout"
+        ],
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
+      }
     }
   ],
   "test-integration-non-k8s-ig_containerd": [
-    {
-      "id": "12121_1",
-      "run_id": "9321370187",
-      "ref_name": "2906/merge",
-      "pull_request": {
-        "id": "2906",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Add tests for image export and import"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "12119_1",
       "run_id": "9321151624",
@@ -48864,33 +48846,34 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "12121_1",
-      "run_id": "9321370187",
-      "ref_name": "2906/merge",
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
       "pull_request": {
-        "id": "2906",
-        "author": "mauriciovasquezbernal",
-        "title": "tests: Add tests for image export and import"
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestFilterByContainerName",
           "TestWatchContainers",
           "TestSnapshotProcess",
           "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
           "TestTraceNetwork"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "12119_1",
       "run_id": "9321151624",
@@ -51261,6 +51244,31 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "12281_1",
+      "run_id": "9551444694",
+      "ref_name": "2684/merge",
+      "pull_request": {
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceNetwork"
+        ],
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
         "skip": null
       }
     }
