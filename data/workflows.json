@@ -1,84 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "12223_1",
-      "run_id": "9493249122",
-      "ref_name": "3010/merge",
-      "pull_request": {
-        "id": "3010",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/aws/aws-sdk-go from 1.53.18 to 1.54.0 in /tools/eks-cleanup"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "12224_1",
       "run_id": "9493323837",
       "ref_name": "3011/merge",
@@ -7759,20 +7681,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "12223_1",
-      "run_id": "9493249122",
-      "ref_name": "3010/merge",
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
       "pull_request": {
-        "id": "3010",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/aws/aws-sdk-go from 1.53.18 to 1.54.0 in /tools/eks-cleanup"
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -7790,6 +7710,8 @@
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
@@ -7797,6 +7719,15 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -7804,22 +7735,10 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": [
-          "TestTraceMount",
-          "TestTraceNetwork"
-        ],
+        "fail": null,
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -7829,10 +7748,7 @@
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
-          "TestRunTraceMount",
           "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestSnapshotSocket",
@@ -7840,7 +7756,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "12224_1",
       "run_id": "9493323837",
@@ -15559,20 +15477,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "12223_1",
-      "run_id": "9493249122",
-      "ref_name": "3010/merge",
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
       "pull_request": {
-        "id": "3010",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/aws/aws-sdk-go from 1.53.18 to 1.54.0 in /tools/eks-cleanup"
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -15591,7 +15507,6 @@
           "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
@@ -15606,19 +15521,21 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
           "TestTopTCP/StartAndStop",
           "TestTopTCP/Timeout",
           "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceNetwork"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -15628,10 +15545,7 @@
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
-          "TestRunTraceMount",
           "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestSnapshotSocket",
@@ -15639,7 +15553,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "12224_1",
       "run_id": "9493323837",
@@ -23266,41 +23182,34 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "12210_1",
-      "run_id": "9481236488",
-      "ref_name": "3007/merge",
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
       "pull_request": {
-        "id": "3007",
-        "author": "eiffel-fl",
-        "title": "Revert \"updating field names: pod and container\""
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
           "TestProfileBlockIO",
           "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestSnapshotSocket",
           "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
           "TestTraceExec",
+          "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
           "TestTraceNetwork",
@@ -23311,11 +23220,15 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTraceloop",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -23323,29 +23236,30 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
         ],
         "fail": null,
         "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
           "TestTopBlockIO",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
+          "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "12211_1",
       "run_id": "9481268117",
@@ -30917,27 +30831,29 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "12203_3",
-      "run_id": "9480015532",
-      "ref_name": "2980/merge",
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
       "pull_request": {
-        "id": "2980",
-        "author": "alban",
-        "title": "uprobetracer: use secureopen to avoid TOCTOU issues"
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
+          "TestRunInsecure",
           "TestRunSchedCLS",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
@@ -30959,9 +30875,9 @@
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -30969,20 +30885,12 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestPrometheus/CounterMetrics"
         ],
-        "fail": [
-          "TestRunInsecure",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp"
-        ],
+        "fail": null,
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -30997,7 +30905,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "12203_4",
       "run_id": "9480015532",
@@ -38567,27 +38477,29 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "12203_4",
-      "run_id": "9480015532",
-      "ref_name": "2980/merge",
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
       "pull_request": {
-        "id": "2980",
-        "author": "alban",
-        "title": "uprobetracer: use secureopen to avoid TOCTOU issues"
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
           "TestAuditSeccomp",
           "TestProfileBlockIO",
           "TestProfileCpu",
+          "TestRunInsecure",
           "TestRunSchedCLS",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTraceBind",
@@ -38606,10 +38518,15 @@
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
-          "TestPrometheus/CounterMetrics",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -38617,22 +38534,9 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
+          "TestPrometheus/CounterMetrics"
         ],
-        "fail": [
-          "TestRunInsecure",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp"
-        ],
+        "fail": null,
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -38647,7 +38551,9 @@
           "TestTraceExecHost"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "12210_1",
       "run_id": "9481236488",
@@ -46217,33 +46123,83 @@
           "TestTraceExecHost"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "12211_1",
-      "run_id": "9481268117",
-      "ref_name": "2998/merge",
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
       "pull_request": {
-        "id": "2998",
-        "author": "alban",
-        "title": "pkg/container-hook: add new test"
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
           "TestSnapshotProcess",
-          "TestTopEbpf",
+          "TestSnapshotSocket",
+          "TestTraceBind",
+          "TestTraceCapabilities",
           "TestTraceDns",
           "TestTraceDnsUncompress",
-          "TestTraceNetwork"
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestTraceloop",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestPrometheus/CounterMetrics"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestTopBlockIO",
+          "TestTraceDnsHost",
+          "TestTraceExecHost"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "12212_1",
       "run_id": "9482896603",
@@ -48605,6 +48561,30 @@
         "id": "3016",
         "author": "dependabot[bot]",
         "title": "go: bump github.com/miekg/dns from 1.1.59 to 1.1.61 in /tools/dnstester"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
+      "pull_request": {
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
         "conclusion": "success",
@@ -48624,30 +48604,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "12211_1",
-      "run_id": "9481268117",
-      "ref_name": "2998/merge",
-      "pull_request": {
-        "id": "2998",
-        "author": "alban",
-        "title": "pkg/container-hook: add new test"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12212_1",
       "run_id": "9482896603",
       "ref_name": "3004/merge",
@@ -51005,6 +50961,30 @@
         "id": "3016",
         "author": "dependabot[bot]",
         "title": "go: bump github.com/miekg/dns from 1.1.59 to 1.1.61 in /tools/dnstester"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "12352_1",
+      "run_id": "9594538209",
+      "ref_name": "2847/merge",
+      "pull_request": {
+        "id": "2847",
+        "author": "mqasimsarfraz",
+        "title": "ci: improve handling of public-key-check"
       },
       "summary": {
         "conclusion": "success",
