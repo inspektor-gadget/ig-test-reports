@@ -1,84 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "12237_1",
-      "run_id": "9499341740",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "12241_1",
       "run_id": "9499726491",
       "ref_name": "2904/merge",
@@ -7595,20 +7517,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "12238_1",
-      "run_id": "9499357946",
-      "ref_name": "2985/merge",
+      "id": "12361_1",
+      "run_id": "9596718428",
+      "ref_name": "3030/merge",
       "pull_request": {
-        "id": "2985",
-        "author": "dependabot[bot]",
-        "title": "go: bump sigs.k8s.io/security-profiles-operator from 0.8.3 to 0.8.4"
+        "id": "3030",
+        "author": "eiffel-fl",
+        "title": "Use `host.HostRoot` when listing containers"
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -7627,6 +7547,7 @@
           "TestTraceExecHost",
           "TestTraceFsslower",
           "TestTraceMount",
+          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
@@ -7634,15 +7555,15 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestTopFile/StartAndStop",
           "TestTopFile/Timeout",
           "TestTopFile/Interval=Timeout",
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -7653,9 +7574,7 @@
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
-        "fail": [
-          "TestTraceNetwork"
-        ],
+        "fail": null,
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -7665,10 +7584,7 @@
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
-          "TestRunTraceMount",
           "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestSnapshotSocket",
@@ -7676,7 +7592,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "12237_1",
       "run_id": "9499341740",
@@ -15296,20 +15214,18 @@
           "TestTraceloop"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "12237_1",
-      "run_id": "9499341740",
-      "ref_name": "main",
+      "id": "12361_1",
+      "run_id": "9596718428",
+      "ref_name": "3030/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "3030",
+        "author": "eiffel-fl",
+        "title": "Use `host.HostRoot` when listing containers"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "failure",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -15327,8 +15243,6 @@
           "TestTraceExec",
           "TestTraceExecHost",
           "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
           "TestTraceOOMKill",
           "TestTraceOpen",
           "TestTraceSignal",
@@ -15336,6 +15250,15 @@
           "TestTraceTCP",
           "TestTraceTcpconnect",
           "TestTraceTcpconnect_latency",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
           "TestProfileTCPRTT/DefaultParams",
           "TestProfileTCPRTT/FilterRemotePort",
           "TestProfileTCPRTT/FilterRemoteAddr",
@@ -15343,19 +15266,13 @@
           "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
           "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
           "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
           "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout"
+          "TestListContainers/FilteredList"
         ],
-        "fail": null,
+        "fail": [
+          "TestTraceMount",
+          "TestTraceNetwork"
+        ],
         "skip": [
           "TestAdviseNetworkpolicy",
           "TestAdviseSeccompProfile",
@@ -15365,10 +15282,7 @@
           "TestRunSchedCLS",
           "TestRunSnapshotProcess",
           "TestRunTopFile",
-          "TestRunTraceMount",
           "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
           "TestRunTraceSni",
           "TestRunTraceTcp",
           "TestSnapshotSocket",
@@ -15376,7 +15290,9 @@
           "TestTraceloop"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "12241_1",
       "run_id": "9499726491",
@@ -22771,6 +22687,81 @@
         "id": "3047",
         "author": "eiffel-fl",
         "title": "ci: Use westeurope for AKS."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
+          "TestTraceExec",
+          "TestTraceExecHost",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunInsecure",
+          "TestRunSchedCLS",
+          "TestRunSnapshotProcess",
+          "TestRunTopFile",
+          "TestRunTraceOOMKill",
+          "TestRunTraceSni",
+          "TestRunTraceTcp",
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceloop"
+        ]
+      }
+    },
+    {
+      "id": "12361_1",
+      "run_id": "9596718428",
+      "ref_name": "3030/merge",
+      "pull_request": {
+        "id": "3030",
+        "author": "eiffel-fl",
+        "title": "Use `host.HostRoot` when listing containers"
       },
       "summary": {
         "conclusion": "success",
@@ -45664,30 +45655,6 @@
   ],
   "test-integration-non-k8s-ig_containerd": [
     {
-      "id": "12231_1",
-      "run_id": "9496258138",
-      "ref_name": "3012/merge",
-      "pull_request": {
-        "id": "3012",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group with 8 updates"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12233_1",
       "run_id": "9496384968",
       "ref_name": "2912/merge",
@@ -48048,6 +48015,30 @@
         "id": "3047",
         "author": "eiffel-fl",
         "title": "ci: Use westeurope for AKS."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "12361_1",
+      "run_id": "9596718428",
+      "ref_name": "3030/merge",
+      "pull_request": {
+        "id": "3030",
+        "author": "eiffel-fl",
+        "title": "Use `host.HostRoot` when listing containers"
       },
       "summary": {
         "conclusion": "success",
@@ -48067,30 +48058,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "12231_1",
-      "run_id": "9496258138",
-      "ref_name": "3012/merge",
-      "pull_request": {
-        "id": "3012",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group with 8 updates"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12233_1",
       "run_id": "9496384968",
       "ref_name": "2912/merge",
@@ -50459,6 +50426,27 @@
           "TestTraceDns",
           "TestTraceDnsUncompress",
           "TestTraceNetwork"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "12361_1",
+      "run_id": "9596718428",
+      "ref_name": "3030/merge",
+      "pull_request": {
+        "id": "3030",
+        "author": "eiffel-fl",
+        "title": "Use `host.HostRoot` when listing containers"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDnsUncompress"
         ],
         "fail": null,
         "skip": null
