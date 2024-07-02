@@ -44628,30 +44628,6 @@
   ],
   "test-integration-non-k8s-ig_containerd": [
     {
-      "id": "12313_1",
-      "run_id": "9568515588",
-      "ref_name": "3031/merge",
-      "pull_request": {
-        "id": "3031",
-        "author": "mauriciovasquezbernal",
-        "title": "pkg/gadgets: Update ebpf objects"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12316_1",
       "run_id": "9569097893",
       "ref_name": "main",
@@ -47024,6 +47000,31 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "12603_1",
+      "run_id": "9765356585",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
+        "fail": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTraceNetwork"
+        ],
         "skip": null
       }
     }
