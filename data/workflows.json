@@ -118060,5 +118060,37 @@
         ]
       }
     }
+  ],
+  "test-gadgets-k8s_test-gadgets-k8s-cri-o": [
+    {
+      "id": "12890_2",
+      "run_id": "9983344413",
+      "ref_name": "3172/merge",
+      "pull_request": {
+        "id": "3172",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Test on containerd too"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP"
+        ],
+        "fail": [
+          "TestTraceMount"
+        ],
+        "skip": [
+          "TestAuditSeccomp"
+        ]
+      }
+    }
   ]
 }
