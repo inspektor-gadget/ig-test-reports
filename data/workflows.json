@@ -1,22 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "12682_1",
-      "run_id": "9796816863",
-      "ref_name": "3129/merge",
-      "pull_request": {
-        "id": "3129",
-        "author": "mauriciovasquezbernal",
-        "title": "gadgets/trace_bind: Fix trace_bind after formatters rework"
-      },
-      "summary": {
-        "conclusion": "cancelled",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12686_1",
       "run_id": "9802677248",
       "ref_name": "3135/merge",
@@ -6855,6 +6839,76 @@
         "id": "3272",
         "author": "eiffel-fl",
         "title": "pkg/gadgets: Fix tracepoint for top block-io."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
+          "TestTraceExec",
+          "TestTraceExecHost",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunSchedCLS",
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceloop"
+        ]
+      }
+    },
+    {
+      "id": "13218_1",
+      "run_id": "10203693247",
+      "ref_name": "3265/merge",
+      "pull_request": {
+        "id": "3265",
+        "author": "flyth",
+        "title": "docs/gadget-devel: add docs for metrics collection"
       },
       "summary": {
         "conclusion": "success",
