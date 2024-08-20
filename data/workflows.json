@@ -78400,83 +78400,6 @@
   ],
   "test-integration-aro_aro": [
     {
-      "id": "11801_1",
-      "run_id": "9126340020",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestRunTraceMount",
-          "TestRunTraceOOMKill",
-          "TestRunTraceOpen",
-          "TestRunTraceSignal",
-          "TestRunTraceSni",
-          "TestRunTraceTcp",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceExec",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceNetwork",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestTraceloop",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestPrometheus/CounterMetrics",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout"
-        ],
-        "fail": null,
-        "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestRunSnapshotProcess",
-          "TestRunTopFile",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceCapabilities",
-          "TestTraceDnsHost",
-          "TestTraceExecHost"
-        ]
-      }
-    },
-    {
       "id": "11804_1",
       "run_id": "9126717025",
       "ref_name": "main",
@@ -85923,6 +85846,51 @@
           "TestTraceTcpconnect_latency",
           "TestTraceloop",
           "TestPrometheus/CounterMetrics"
+        ],
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestRunInsecure",
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceCapabilities",
+          "TestTraceDnsHost",
+          "TestTraceExecHost",
+          "TestTraceNetwork"
+        ]
+      }
+    },
+    {
+      "id": "13589_2",
+      "run_id": "10473058221",
+      "ref_name": "citest/burak/get-gke-cred",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "cancelled",
+        "pass": [
+          "TestTraceDns"
+        ],
+        "fail": [
+          "TestAdviseNetworkpolicy",
+          "TestRunSchedCLS",
+          "TestTopTCP",
+          "TestTraceBind",
+          "TestTraceDnsUncompress",
+          "TestTraceExec",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceloop"
         ],
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
