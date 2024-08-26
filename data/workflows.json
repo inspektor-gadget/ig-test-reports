@@ -42965,30 +42965,6 @@
   ],
   "test-integration-non-k8s-ig_containerd": [
     {
-      "id": "12816_1",
-      "run_id": "9933417970",
-      "ref_name": "3167/merge",
-      "pull_request": {
-        "id": "3167",
-        "author": "dependabot[bot]",
-        "title": "ci: bump aquasecurity/trivy-action from 0.23.0 to 0.24.0"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12850_1",
       "run_id": "9954183361",
       "ref_name": "3158/merge",
@@ -45361,6 +45337,31 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "13666_2",
+      "run_id": "10560552863",
+      "ref_name": "2684/merge",
+      "pull_request": {
+        "id": "2684",
+        "author": "alban",
+        "title": "builtin trace-dns: use new fields from socket enricher"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceNetwork"
+        ],
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
         "skip": null
       }
     }
