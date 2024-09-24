@@ -118828,35 +118828,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13107_1",
-      "run_id": "10137649255",
-      "ref_name": "3243/merge",
-      "pull_request": {
-        "id": "3243",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/containers/common from 0.59.2 to 0.60.0"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceOomKill",
-          "TestTraceSNI"
-        ]
-      }
-    },
-    {
       "id": "13121_1",
       "run_id": "10141081175",
       "ref_name": "main",
@@ -122152,6 +122123,42 @@
           "TestDaemonHeadless"
         ],
         "fail": null,
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14045_1",
+      "run_id": "11006740184",
+      "ref_name": "3514/merge",
+      "pull_request": {
+        "id": "3514",
+        "author": "dependabot[bot]",
+        "title": "go: bump github.com/containers/common from 0.60.2 to 0.60.3"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect"
+        ],
+        "fail": [
+          "TestDaemonHeadless"
+        ],
         "skip": [
           "TestAuditSeccomp",
           "TestTraceDNS",
