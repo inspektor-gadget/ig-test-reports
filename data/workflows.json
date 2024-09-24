@@ -118828,35 +118828,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13129_2",
-      "run_id": "10147495608",
-      "ref_name": "3252/merge",
-      "pull_request": {
-        "id": "3252",
-        "author": "mauriciovasquezbernal",
-        "title": "Improve insecure registries support"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceOomKill",
-          "TestTraceSNI"
-        ]
-      }
-    },
-    {
       "id": "13133_2",
       "run_id": "10150160949",
       "ref_name": "3253/merge",
@@ -122172,6 +122143,41 @@
         "fail": [
           "TestDaemonHeadless"
         ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14050_1",
+      "run_id": "11011892228",
+      "ref_name": "3515/merge",
+      "pull_request": {
+        "id": "3515",
+        "author": "flyth",
+        "title": "cmd/common: allow to specify gadget runtime configuration using \"-f\""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestDaemonHeadless"
+        ],
+        "fail": null,
         "skip": [
           "TestAuditSeccomp",
           "TestTraceDNS",
