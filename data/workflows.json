@@ -118828,36 +118828,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13143_1",
-      "run_id": "10157959426",
-      "ref_name": "3210/merge",
-      "pull_request": {
-        "id": "3210",
-        "author": "dependabot[bot]",
-        "title": "Dockerfiles: Bump golang from `829eff9` to `1b70fa8` in /Dockerfiles"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceOomKill",
-          "TestTraceSNI"
-        ]
-      }
-    },
-    {
       "id": "13141_1",
       "run_id": "10157830060",
       "ref_name": "main",
@@ -122190,6 +122160,43 @@
           "TestDaemonHeadless"
         ],
         "fail": null,
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14054_1",
+      "run_id": "11014479535",
+      "ref_name": "3463/merge",
+      "pull_request": {
+        "id": "3463",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Port trace_fsslower to image-based"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestDaemonHeadless"
+        ],
+        "fail": [
+          "TestTraceExec"
+        ],
         "skip": [
           "TestAuditSeccomp",
           "TestTraceDNS",
