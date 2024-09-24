@@ -118828,35 +118828,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13133_2",
-      "run_id": "10150160949",
-      "ref_name": "3253/merge",
-      "pull_request": {
-        "id": "3253",
-        "author": "flyth",
-        "title": "image-based gadgets: add support for profiler gadgets"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceOomKill",
-          "TestTraceSNI"
-        ]
-      }
-    },
-    {
       "id": "13140_1",
       "run_id": "10155891091",
       "ref_name": "3256/merge",
@@ -122178,6 +122149,42 @@
           "TestDaemonHeadless"
         ],
         "fail": null,
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14045_3",
+      "run_id": "11006740184",
+      "ref_name": "3514/merge",
+      "pull_request": {
+        "id": "3514",
+        "author": "dependabot[bot]",
+        "title": "go: bump github.com/containers/common from 0.60.2 to 0.60.3"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect"
+        ],
+        "fail": [
+          "TestDaemonHeadless"
+        ],
         "skip": [
           "TestAuditSeccomp",
           "TestTraceDNS",
