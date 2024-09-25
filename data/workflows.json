@@ -118828,36 +118828,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13144_1",
-      "run_id": "10158745446",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceOomKill",
-          "TestTraceSNI"
-        ]
-      }
-    },
-    {
       "id": "13145_1",
       "run_id": "10158934601",
       "ref_name": "main",
@@ -122189,6 +122159,42 @@
         "conclusion": "success",
         "pass": [
           "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestDaemonHeadless"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14057_1",
+      "run_id": "11029558245",
+      "ref_name": "3273/merge",
+      "pull_request": {
+        "id": "3273",
+        "author": "burak-ok",
+        "title": "Add top_blockio"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopBlockio",
           "TestTopFile",
           "TestTopTcp",
           "TestTraceBind",
