@@ -118864,36 +118864,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13153_1",
-      "run_id": "10160637727",
-      "ref_name": "3253/merge",
-      "pull_request": {
-        "id": "3253",
-        "author": "flyth",
-        "title": "image-based gadgets: add support for profiler gadgets"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceOomKill",
-          "TestTraceSNI"
-        ]
-      }
-    },
-    {
       "id": "13181_1",
       "run_id": "10182606176",
       "ref_name": "3250/merge",
@@ -122256,6 +122226,41 @@
         "fail": [
           "TestDaemonHeadless"
         ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14061_1",
+      "run_id": "11035103432",
+      "ref_name": "3519/merge",
+      "pull_request": {
+        "id": "3519",
+        "author": "mauriciovasquezbernal",
+        "title": "gadgets: Fix headless test"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestDaemonHeadless"
+        ],
+        "fail": null,
         "skip": [
           "TestAuditSeccomp",
           "TestTraceDNS",
