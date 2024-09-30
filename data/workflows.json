@@ -118931,40 +118931,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13535_1",
-      "run_id": "10414351812",
-      "ref_name": "3353/merge",
-      "pull_request": {
-        "id": "3353",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group with 8 updates"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceTcpconnect"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceDNS",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "13599_1",
       "run_id": "10483244355",
       "ref_name": "3380/merge",
@@ -122364,6 +122330,44 @@
           "TestDaemonHeadless"
         ],
         "fail": null,
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "14091_1",
+      "run_id": "11105764413",
+      "ref_name": "3515/merge",
+      "pull_request": {
+        "id": "3515",
+        "author": "flyth",
+        "title": "cmd/common: allow to specify gadget runtime configuration using \"-f\""
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestDaemonHeadless"
+        ],
+        "fail": [
+          "TestTopBlockio",
+          "TestTraceFSSlower"
+        ],
         "skip": [
           "TestAuditSeccomp",
           "TestTraceDNS",
