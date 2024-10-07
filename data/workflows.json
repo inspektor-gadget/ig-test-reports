@@ -6935,76 +6935,6 @@
   ],
   "test-integration-k8s-ig_cri-o": [
     {
-      "id": "12891_2",
-      "run_id": "9983741506",
-      "ref_name": "3164/merge",
-      "pull_request": {
-        "id": "3164",
-        "author": "mauriciovasquezbernal",
-        "title": "Update metadata validation and generation"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestSnapshotProcess",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceDnsHost",
-          "TestTraceExec",
-          "TestTraceExecHost",
-          "TestTraceFsslower",
-          "TestTraceMount",
-          "TestTraceOOMKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSni",
-          "TestTraceTCP",
-          "TestTraceTcpconnect",
-          "TestTraceTcpconnect_latency",
-          "TestProfileTCPRTT/DefaultParams",
-          "TestProfileTCPRTT/FilterRemotePort",
-          "TestProfileTCPRTT/FilterRemoteAddr",
-          "TestProfileTCPRTT/FilterLocalAddr",
-          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
-          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
-          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
-          "TestTopTCP/StartAndStop",
-          "TestTopTCP/Timeout",
-          "TestTopTCP/Interval=Timeout",
-          "TestTopFile/StartAndStop",
-          "TestTopFile/Timeout",
-          "TestTopFile/Interval=Timeout",
-          "TestTopEbpf/StartAndStop",
-          "TestTopEbpf/Timeout",
-          "TestTopEbpf/Interval=Timeout",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunInsecure",
-          "TestRunSchedCLS",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceNetwork",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "12925_1",
       "run_id": "9993663837",
       "ref_name": "3182/merge",
@@ -13755,6 +13685,40 @@
           "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunSchedCLS",
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceNetwork",
+          "TestTraceloop"
+        ]
+      }
+    },
+    {
+      "id": "14148_2",
+      "run_id": "11208271596",
+      "ref_name": "3551/merge",
+      "pull_request": {
+        "id": "3551",
+        "author": "dependabot[bot]",
+        "title": "go: bump github.com/tklauser/numcpus from 0.8.0 to 0.9.0"
+      },
+      "summary": {
+        "conclusion": "cancelled",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestTraceBind",
+          "TestTraceCapabilities"
         ],
         "fail": null,
         "skip": [
