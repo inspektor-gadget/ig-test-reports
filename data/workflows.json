@@ -13684,22 +13684,6 @@
   ],
   "test-integration-k8s-ig_docker": [
     {
-      "id": "13887_1",
-      "run_id": "10808588346",
-      "ref_name": "3472/merge",
-      "pull_request": {
-        "id": "3472",
-        "author": "eiffel-fl",
-        "title": "pkg: Add safeset package."
-      },
-      "summary": {
-        "conclusion": "cancelled",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "13890_1",
       "run_id": "10809283591",
       "ref_name": "main",
@@ -20510,6 +20494,76 @@
           "TestTopEbpf/StartAndStop",
           "TestTopEbpf/Timeout",
           "TestTopEbpf/Interval=Timeout",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunSchedCLS",
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceloop"
+        ]
+      }
+    },
+    {
+      "id": "14326_1",
+      "run_id": "11404495131",
+      "ref_name": "3581/merge",
+      "pull_request": {
+        "id": "3581",
+        "author": "dependabot[bot]",
+        "title": "go: bump the otel group with 4 updates"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
+          "TestTraceExec",
+          "TestTraceExecHost",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceNetwork",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
         ],
