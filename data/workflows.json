@@ -45521,30 +45521,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "12711_1",
-      "run_id": "9845985113",
-      "ref_name": "citest/mauricio/avoid-docker",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "12752_1",
       "run_id": "9879052962",
       "ref_name": "citest/mauricio/freeze-maps",
@@ -47917,6 +47893,31 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "14387_2",
+      "run_id": "11476493740",
+      "ref_name": "3501/merge",
+      "pull_request": {
+        "id": "3501",
+        "author": "alban",
+        "title": "Container enrichment: add container PID"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestWatchContainers",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
+        "fail": [
+          "TestFilterByContainerName",
+          "TestSnapshotProcess"
+        ],
         "skip": null
       }
     }
