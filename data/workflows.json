@@ -118751,6 +118751,44 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "14602_3",
+      "run_id": "11666314779",
+      "ref_name": "3669/merge",
+      "pull_request": {
+        "id": "3669",
+        "author": "burak-ok",
+        "title": "tests: Disable TestTraceNetwork on containerd"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTcpconnect"
+        ],
+        "fail": [
+          "TestSnapshotSocket"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-containerd": [
