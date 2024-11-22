@@ -120466,6 +120466,44 @@
           "TestAuditSeccomp"
         ]
       }
+    },
+    {
+      "id": "14847_2",
+      "run_id": "11973568519",
+      "ref_name": "3702/merge",
+      "pull_request": {
+        "id": "3702",
+        "author": "burak-ok",
+        "title": "WASM: Release handles"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTcpconnect"
+        ],
+        "fail": [
+          "TestSnapshotSocket"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
