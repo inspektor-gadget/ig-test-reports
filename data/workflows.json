@@ -119452,6 +119452,44 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "14894_2",
+      "run_id": "12035350609",
+      "ref_name": "3726/merge",
+      "pull_request": {
+        "id": "3726",
+        "author": "alban",
+        "title": "exec args: support up to 256 bytes per arg"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTcpconnect"
+        ],
+        "fail": [
+          "TestSnapshotProcess",
+          "TestSnapshotSocket"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-containerd": [
