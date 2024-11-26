@@ -119376,6 +119376,44 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "14892_2",
+      "run_id": "12034641502",
+      "ref_name": "3724/merge",
+      "pull_request": {
+        "id": "3724",
+        "author": "alban",
+        "title": "container-hook: additional coherence checks"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTcpconnect"
+        ],
+        "fail": [
+          "TestSnapshotSocket"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-containerd": [
