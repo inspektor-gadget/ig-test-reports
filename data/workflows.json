@@ -6952,40 +6952,6 @@
   ],
   "test-integration-k8s-ig_cri-o": [
     {
-      "id": "14148_2",
-      "run_id": "11208271596",
-      "ref_name": "3551/merge",
-      "pull_request": {
-        "id": "3551",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/tklauser/numcpus from 0.8.0 to 0.9.0"
-      },
-      "summary": {
-        "conclusion": "cancelled",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestProfileBlockIO",
-          "TestProfileCpu",
-          "TestTraceBind",
-          "TestTraceCapabilities"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicy",
-          "TestAdviseSeccompProfile",
-          "TestAuditSeccomp",
-          "TestPrometheus",
-          "TestRunSchedCLS",
-          "TestSnapshotSocket",
-          "TestTopBlockIO",
-          "TestTraceNetwork",
-          "TestTraceloop"
-        ]
-      }
-    },
-    {
       "id": "14180_1",
       "run_id": "11235135754",
       "ref_name": "3540/merge",
@@ -13823,6 +13789,76 @@
           "TestTopFile/Interval=Timeout",
           "TestListContainers/ListAll",
           "TestListContainers/FilteredList"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicy",
+          "TestAdviseSeccompProfile",
+          "TestAuditSeccomp",
+          "TestPrometheus",
+          "TestRunSchedCLS",
+          "TestSnapshotSocket",
+          "TestTopBlockIO",
+          "TestTraceNetwork",
+          "TestTraceloop"
+        ]
+      }
+    },
+    {
+      "id": "15333_1",
+      "run_id": "12583756421",
+      "ref_name": "3847/merge",
+      "pull_request": {
+        "id": "3847",
+        "author": "eiffel-fl",
+        "title": "pkg: Rework error message to cope with code scanning alerts."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestProfileBlockIO",
+          "TestProfileCpu",
+          "TestRunInsecure",
+          "TestSnapshotProcess",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceDnsHost",
+          "TestTraceExec",
+          "TestTraceExecHost",
+          "TestTraceFsslower",
+          "TestTraceMount",
+          "TestTraceOOMKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSni",
+          "TestTraceTCP",
+          "TestTraceTcpconnect",
+          "TestTraceTcpconnect_latency",
+          "TestProfileTCPRTT/DefaultParams",
+          "TestProfileTCPRTT/FilterRemotePort",
+          "TestProfileTCPRTT/FilterRemoteAddr",
+          "TestProfileTCPRTT/FilterLocalAddr",
+          "TestProfileTCPRTT/ByRemoteAndFilterLocalAddr",
+          "TestProfileTCPRTT/ByLocalAndFilterRemoteAddr",
+          "TestProfileTCPRTT/MillisecondsAndFilterRemoteAndLocalAddr",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestTopFile/StartAndStop",
+          "TestTopFile/Timeout",
+          "TestTopFile/Interval=Timeout",
+          "TestTopTCP/StartAndStop",
+          "TestTopTCP/Timeout",
+          "TestTopTCP/Interval=Timeout",
+          "TestTopEbpf/StartAndStop",
+          "TestTopEbpf/Timeout",
+          "TestTopEbpf/Interval=Timeout"
         ],
         "fail": null,
         "skip": [
