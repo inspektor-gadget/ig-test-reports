@@ -121432,40 +121432,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13951_2",
-      "run_id": "10884934447",
-      "ref_name": "3489/merge",
-      "pull_request": {
-        "id": "3489",
-        "author": "dependabot[bot]",
-        "title": "go: bump github.com/cyphar/filepath-securejoin from 0.3.1 to 0.3.2"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceTcpconnect"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceDNS",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "13956_1",
       "run_id": "10904559815",
       "ref_name": "3426/merge",
@@ -125012,6 +124978,43 @@
           "TestTraceFSSlower",
           "TestTraceMount",
           "TestTraceOpen"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "15421_1",
+      "run_id": "12674788840",
+      "ref_name": "3864/merge",
+      "pull_request": {
+        "id": "3864",
+        "author": "alban",
+        "title": "container-hook: improve logging"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP"
+        ],
+        "fail": [
+          "TestTopTcp"
         ],
         "skip": [
           "TestAuditSeccomp",
