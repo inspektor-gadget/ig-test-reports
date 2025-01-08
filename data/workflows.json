@@ -43454,30 +43454,6 @@
   ],
   "test-integration-non-k8s-ig_containerd": [
     {
-      "id": "14209_3",
-      "run_id": "11277713751",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "14311_1",
       "run_id": "11392905936",
       "ref_name": "main",
@@ -45851,6 +45827,31 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "15406_1",
+      "run_id": "12664188252",
+      "ref_name": "3862/merge",
+      "pull_request": {
+        "id": "3862",
+        "author": "dependabot[bot]",
+        "title": "go: bump sigs.k8s.io/controller-runtime from 0.19.3 to 0.19.4"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf",
+          "TestTraceDns",
+          "TestTraceDnsUncompress"
+        ],
+        "fail": [
+          "TestTraceNetwork"
+        ],
         "skip": null
       }
     }
