@@ -119828,6 +119828,43 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "15445_3",
+      "run_id": "12692223049",
+      "ref_name": "3842/merge",
+      "pull_request": {
+        "id": "3842",
+        "author": "mauriciovasquezbernal",
+        "title": "pkg/oci: Use a file lock to avoid concurrency issues"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP"
+        ],
+        "fail": [
+          "TestTopTcp",
+          "TestTraceBind"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-containerd": [
