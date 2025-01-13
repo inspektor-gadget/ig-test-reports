@@ -121563,40 +121563,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13956_1",
-      "run_id": "10904559815",
-      "ref_name": "3426/merge",
-      "pull_request": {
-        "id": "3426",
-        "author": "dependabot[bot]",
-        "title": "go: Bump github.com/medyagh/gopogh from 0.27.0 to 0.28.0 in /tools/testjson2md"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceTcpconnect"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceDNS",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "13959_1",
       "run_id": "10907201495",
       "ref_name": "main",
@@ -125146,6 +125112,43 @@
         ],
         "fail": [
           "TestTopTcp"
+        ],
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "15517_2",
+      "run_id": "12750664268",
+      "ref_name": "3842/merge",
+      "pull_request": {
+        "id": "3842",
+        "author": "mauriciovasquezbernal",
+        "title": "pkg/oci: Use a file lock to avoid concurrency issues"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP"
+        ],
+        "fail": [
+          "TestSnapshotSocket"
         ],
         "skip": [
           "TestAuditSeccomp",
