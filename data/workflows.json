@@ -121475,40 +121475,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "13977_1",
-      "run_id": "10926347020",
-      "ref_name": "3499/merge",
-      "pull_request": {
-        "id": "3499",
-        "author": "mqasimsarfraz",
-        "title": "charts: Fix INSPEKTOR_GADGET_VERSION env"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestSnapshotProcess",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceTcpconnect"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAuditSeccomp",
-          "TestTraceDNS",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "13986_1",
       "run_id": "10938923242",
       "ref_name": "3273/merge",
@@ -125051,6 +125017,42 @@
         "id": "3928",
         "author": "alban",
         "title": "trace_tcp: add option to see only failed connections"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAuditSeccomp",
+          "TestTraceDNS",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "15832_1",
+      "run_id": "13015754928",
+      "ref_name": "3932/merge",
+      "pull_request": {
+        "id": "3932",
+        "author": "alban",
+        "title": "kallsyms: implement just in time lookups without allocations"
       },
       "summary": {
         "conclusion": "success",
