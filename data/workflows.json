@@ -43374,30 +43374,6 @@
   ],
   "test-integration-non-k8s-ig_containerd": [
     {
-      "id": "14983_1",
-      "run_id": "12159872415",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestSnapshotProcess",
-          "TestTopEbpf",
-          "TestTraceDns",
-          "TestTraceDnsUncompress",
-          "TestTraceNetwork"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "14996_1",
       "run_id": "12173266460",
       "ref_name": "3744/merge",
@@ -45772,6 +45748,31 @@
           "TestTraceNetwork"
         ],
         "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "15975_1",
+      "run_id": "13160730968",
+      "ref_name": "3957/merge",
+      "pull_request": {
+        "id": "3957",
+        "author": "eiffel-fl",
+        "title": "wip: operators: localmanager: Use datasource to attach and detach con…"
+      },
+      "summary": {
+        "conclusion": "failure",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestSnapshotProcess",
+          "TestTopEbpf"
+        ],
+        "fail": [
+          "TestTraceDns",
+          "TestTraceDnsUncompress",
+          "TestTraceNetwork"
+        ],
         "skip": null
       }
     }
