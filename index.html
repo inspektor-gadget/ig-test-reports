@@ -123,11 +123,11 @@
                 <button id="showAll" class="btn btn-outline-secondary ms-2">Show All</button>
             </div>
             <div class="col-md-3">
-                <select id="jobsPerPage" class="form-select">
-                    <option value="10">10 jobs per page</option>
-                    <option value="20">20 jobs per page</option>
-                    <option value="50">50 jobs per page</option>
-                    <option value="100">100 jobs per page</option>
+                <select id="lastNJobs" class="form-select">
+                    <option value="10">Last 10 Jobs</option>
+                    <option value="20">Last 20 Jobs</option>
+                    <option value="50">Last 50 Jobs</option>
+                    <option value="100">Last 100 Jobs</option>
                 </select>
             </div>
             <div class="col-md-6">
@@ -399,8 +399,8 @@
                 calculateStats(allData);
             });
 
-            // Jobs per page selector
-            document.getElementById('jobsPerPage').addEventListener('change', function() {
+            // Last N Jobs dropdown
+            document.getElementById('lastNJobs').addEventListener('change', function() {
                 jobsCount = parseInt(this.value);
                 calculateStats(allData);
             });
