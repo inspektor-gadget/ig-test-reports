@@ -1,37 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "19748_1",
-      "run_id": "20353742870",
-      "ref_name": "5171/merge",
-      "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19740_1",
       "run_id": "20338728165",
       "ref_name": "main",
@@ -3435,20 +3404,18 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "cancelled",
+        "conclusion": "success",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -3468,7 +3435,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -6891,17 +6860,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "19748_1",
-      "run_id": "20353742870",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
@@ -6924,7 +6891,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "19740_1",
       "run_id": "20338728165",
@@ -10329,51 +10298,40 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "cancelled",
+        "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind"
-        ],
-        "fail": [
-          "TestTraceCapabilities",
-          "TestTraceDNS",
-          "TestTraceDNSTCP"
-        ],
-        "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
-          "TestAuditSeccomp",
-          "TestRunInsecure"
-        ]
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -15786,25 +15744,45 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "cancelled",
-        "pass": null,
-        "fail": [
+        "conclusion": "success",
+        "pass": [
           "TestAdviseNetworkpolicyGadget",
-          "TestContainerFiltering"
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTCPDump",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceloop"
         ],
+        "fail": null,
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -15812,10 +15790,14 @@
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
-          "TestAuditSeccomp"
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -21230,20 +21212,18 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "19744_1",
-      "run_id": "20350708121",
-      "ref_name": "5167/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5167",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group across 2 directories with 7 updates"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
           "TestAdviseNetworkpolicyGadget",
           "TestContainerFiltering",
@@ -21256,6 +21236,7 @@
           "TestTopBlockio",
           "TestTopFile",
           "TestTopTcp",
+          "TestTraceBind",
           "TestTraceCapabilities",
           "TestTraceDNS",
           "TestTraceDNSTCP",
@@ -21269,9 +21250,7 @@
           "TestTraceTCP",
           "TestTraceloop"
         ],
-        "fail": [
-          "TestTraceBind"
-        ],
+        "fail": null,
         "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -21284,7 +21263,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "19746_1",
       "run_id": "20353407596",
@@ -26683,28 +26664,60 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers"
+          "TestAdviseNetworkpolicyGadget",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTCPDump",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceloop"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestTraceTCPretrans"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -28620,6 +28633,25 @@
         "id": "5222",
         "author": "mauriciovasquezbernal",
         "title": "gadgets: Add profile_cude"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
+      "pull_request": {
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
@@ -28634,25 +28666,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
-      "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19748_1",
       "run_id": "20353742870",
       "ref_name": "5171/merge",
@@ -30567,6 +30580,25 @@
         "id": "5222",
         "author": "mauriciovasquezbernal",
         "title": "gadgets: Add profile_cude"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
+      "pull_request": {
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
@@ -85372,51 +85404,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "19748_1",
-      "run_id": "20353742870",
-      "ref_name": "5171/merge",
-      "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestAuditSeccomp",
-          "TestRunInsecure",
-          "TestSchedCLS",
-          "TestTCPDump",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "19740_1",
       "run_id": "20338728165",
       "ref_name": "main",
@@ -89800,6 +89787,51 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
+      "pull_request": {
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceloop"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicyGadget",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestSchedCLS",
+          "TestTCPDump",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-cri-o": [
@@ -91657,51 +91689,6 @@
     }
   ],
   "test-gadgets-local_test-gadgets-local-docker": [
-    {
-      "id": "19748_1",
-      "run_id": "20353742870",
-      "ref_name": "5171/merge",
-      "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAuditSeccomp",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestRunInsecure",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceTCPretrans",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestTraceOomKill"
-        ]
-      }
-    },
     {
       "id": "19740_1",
       "run_id": "20338728165",
@@ -96089,120 +96076,54 @@
           "TestTraceOomKill"
         ]
       }
-    }
-  ],
-  "gadgets-unittest_gadgets-unittest": [
+    },
     {
-      "id": "19748_1",
-      "run_id": "20353742870",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseSeccompGadget/all_containers",
-          "TestAdviseSeccompGadget/specific_container",
           "TestAuditSeccomp",
-          "TestBpfstatsGadget/by_programs",
-          "TestBpfstatsGadget/by_gadget",
-          "TestInspectCmd",
-          "TestExtraInfoLeak",
-          "TestInnerFields",
-          "TestDeadlock",
-          "TestFdpassGadget/basic",
-          "TestFsnotifyGadget/captures_inotify_event",
-          "TestProfileBlockio",
-          "TestProfileCpu",
-          "TestProfileQdiscLatency",
-          "TestProfileTcprtt",
-          "TestSnapshotFileGadget/captures_no_events_with_no_matching_filter",
-          "TestSnapshotFileGadget/captures_events_with_no_filter",
-          "TestSnapshotFileGadget/captures_events_with_matching_filter",
-          "TestSnapshotProcessGadget/captures_events_with_no_filter",
-          "TestSnapshotProcessGadget/captures_no_events_with_no_matching_filter",
-          "TestSnapshotProcessGadget/captures_events_with_matching_filter",
-          "TestSnapshotProcessGadget/no_threads_are_captured",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestRunInsecure",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
           "TestSnapshotSocket",
-          "TestTraceDns",
+          "TestTCPDump",
           "TestTopBlockio",
-          "TestTopFileGadget/captures_events_with_filter",
-          "TestTopProcess",
+          "TestTopFile",
           "TestTopTcp",
-          "TestTraceBind/TCP4_loopback_on_fixed_port",
-          "TestTraceBind/TCP4_loopback_on_ephemeral_port",
-          "TestTraceBind/TCP6_loopback_on_fixed_port",
-          "TestTraceBind/UDP4_loopback_on_high_port",
-          "TestTraceBind/UDP6_loopback_on_ephemeral_port",
-          "TestTraceCapabilitiesGadget/raw_socket",
-          "TestTraceCapabilitiesGadget/device_access",
-          "TestTraceCapabilitiesGadget/perf_event_open",
-          "TestTraceCapabilitiesGadget/nice",
-          "TestNonAuditCapabilities",
-          "TestTraceExecGadget/uid_gid",
-          "TestTraceExecGadget/mount_namespace_filter_blocked",
-          "TestTraceExecGadget/error",
-          "TestTraceExecGadget/successful_exec_from_thread",
-          "TestTraceExecGadget/failed_exec_from_thread",
-          "TestTraceExecGadget/simple_executable",
-          "TestTraceExecGadget/large_argument_list",
-          "TestTraceFsslower",
-          "TestTraceMalloc",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
           "TestTraceMount",
-          "TestTraceOomkill",
-          "TestFiltering/#00",
-          "TestFiltering/mntns=true,",
-          "TestFiltering/pid=true,",
-          "TestFiltering/tid=true,",
-          "TestFiltering/uid=true,",
-          "TestFiltering/gid=true,",
-          "TestFiltering/comm=true,",
-          "TestFiltering/mntns=false,",
-          "TestFiltering/pid=false,",
-          "TestFiltering/tid=false,",
-          "TestFiltering/uid=false,",
-          "TestFiltering/gid=false,",
-          "TestFiltering/comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=false,pid=false,tid=false,uid=false,gid=false,comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=false,comm=true,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=false,gid=true,comm=true,",
-          "TestFiltering/mntns=true,pid=true,tid=false,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=true,pid=false,tid=true,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=false,pid=true,tid=true,uid=true,gid=true,comm=true,",
-          "TestTraceOpenGadget/test_flags_and_mode",
-          "TestTraceOpenGadget/test_symbolic_links",
-          "TestTraceOpenGadget/test_relative_path",
-          "TestTraceOpenGadget/test_prefix_on_directory",
-          "TestTraceOpenGadget/event_has_UID_and_GID_of_user_generating_event",
-          "TestTraceOpenGadget/captures_all_events_with_no_filters_configured",
-          "TestTraceOpenGadget/captures_no_events_with_no_matching_filter",
-          "TestTraceOpenGadget/captures_events_with_matching_filter",
-          "TestTraceSignalGadget/kill",
-          "TestTraceSignalGadget/sigterm",
-          "TestTraceSignalGadget/sigint",
-          "TestTraceSignalGadget/sigusr1",
-          "TestTraceSignalGadget/sigusr2",
-          "TestTraceSni",
-          "TestTraceTcpGadget/captures_connect_sync_err",
-          "TestTraceTcpGadget/captures_connect_async_err",
-          "TestTraceTcpGadget/captures_accept",
-          "TestTraceTcpGadget/captures_close",
-          "TestTraceTcpdrop",
-          "TestTraceTcpretrans",
-          "TestTraceloop",
-          "TestTtysnoopFull/simple_write"
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTCPretrans",
+          "TestTraceloop"
         ],
         "fail": null,
         "skip": [
-          "TestTraceLsm"
+          "TestAdviseNetworkpolicyGadget",
+          "TestTraceOomKill"
         ]
       }
-    },
+    }
+  ],
+  "gadgets-unittest_gadgets-unittest": [
     {
       "id": "19740_2",
       "run_id": "20338728165",
@@ -106831,25 +106752,120 @@
           "TestTraceLsm"
         ]
       }
+    },
+    {
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
+      "pull_request": {
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseSeccompGadget/all_containers",
+          "TestAdviseSeccompGadget/specific_container",
+          "TestAuditSeccomp",
+          "TestBpfstatsGadget/by_gadget",
+          "TestBpfstatsGadget/by_programs",
+          "TestInspectCmd",
+          "TestExtraInfoLeak",
+          "TestInnerFields",
+          "TestDeadlock",
+          "TestFdpassGadget/basic",
+          "TestFsnotifyGadget/captures_inotify_event",
+          "TestProfileBlockio",
+          "TestProfileCpu",
+          "TestProfileQdiscLatency",
+          "TestProfileTcprtt",
+          "TestSnapshotFileGadget/captures_events_with_no_filter",
+          "TestSnapshotFileGadget/captures_events_with_matching_filter",
+          "TestSnapshotFileGadget/captures_no_events_with_no_matching_filter",
+          "TestSnapshotProcessGadget/captures_events_with_no_filter",
+          "TestSnapshotProcessGadget/captures_no_events_with_no_matching_filter",
+          "TestSnapshotProcessGadget/captures_events_with_matching_filter",
+          "TestSnapshotProcessGadget/no_threads_are_captured",
+          "TestSnapshotSocket",
+          "TestTraceDns",
+          "TestTopBlockio",
+          "TestTopFileGadget/captures_events_with_filter",
+          "TestTopProcess",
+          "TestTopTcp",
+          "TestTraceBind/TCP4_loopback_on_fixed_port",
+          "TestTraceBind/TCP4_loopback_on_ephemeral_port",
+          "TestTraceBind/TCP6_loopback_on_fixed_port",
+          "TestTraceBind/UDP4_loopback_on_high_port",
+          "TestTraceBind/UDP6_loopback_on_ephemeral_port",
+          "TestTraceCapabilitiesGadget/raw_socket",
+          "TestTraceCapabilitiesGadget/device_access",
+          "TestTraceCapabilitiesGadget/perf_event_open",
+          "TestTraceCapabilitiesGadget/nice",
+          "TestNonAuditCapabilities",
+          "TestTraceExecGadget/simple_executable",
+          "TestTraceExecGadget/large_argument_list",
+          "TestTraceExecGadget/uid_gid",
+          "TestTraceExecGadget/mount_namespace_filter_blocked",
+          "TestTraceExecGadget/error",
+          "TestTraceExecGadget/successful_exec_from_thread",
+          "TestTraceExecGadget/failed_exec_from_thread",
+          "TestTraceFsslower",
+          "TestTraceMalloc",
+          "TestTraceMount",
+          "TestTraceOomkill",
+          "TestFiltering/#00",
+          "TestFiltering/mntns=true,",
+          "TestFiltering/pid=true,",
+          "TestFiltering/tid=true,",
+          "TestFiltering/uid=true,",
+          "TestFiltering/gid=true,",
+          "TestFiltering/comm=true,",
+          "TestFiltering/mntns=false,",
+          "TestFiltering/pid=false,",
+          "TestFiltering/tid=false,",
+          "TestFiltering/uid=false,",
+          "TestFiltering/gid=false,",
+          "TestFiltering/comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=false,pid=false,tid=false,uid=false,gid=false,comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=false,comm=true,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=false,gid=true,comm=true,",
+          "TestFiltering/mntns=true,pid=true,tid=false,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=true,pid=false,tid=true,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=false,pid=true,tid=true,uid=true,gid=true,comm=true,",
+          "TestTraceOpenGadget/test_prefix_on_directory",
+          "TestTraceOpenGadget/event_has_UID_and_GID_of_user_generating_event",
+          "TestTraceOpenGadget/captures_all_events_with_no_filters_configured",
+          "TestTraceOpenGadget/captures_no_events_with_no_matching_filter",
+          "TestTraceOpenGadget/captures_events_with_matching_filter",
+          "TestTraceOpenGadget/test_flags_and_mode",
+          "TestTraceOpenGadget/test_symbolic_links",
+          "TestTraceOpenGadget/test_relative_path",
+          "TestTraceSignalGadget/kill",
+          "TestTraceSignalGadget/sigterm",
+          "TestTraceSignalGadget/sigint",
+          "TestTraceSignalGadget/sigusr1",
+          "TestTraceSignalGadget/sigusr2",
+          "TestTraceSni",
+          "TestTraceTcpGadget/captures_close",
+          "TestTraceTcpGadget/captures_connect_sync_err",
+          "TestTraceTcpGadget/captures_connect_async_err",
+          "TestTraceTcpGadget/captures_accept",
+          "TestTraceTcpdrop",
+          "TestTraceTcpretrans",
+          "TestTraceloop",
+          "TestTtysnoopFull/simple_write"
+        ],
+        "fail": null,
+        "skip": [
+          "TestTraceLsm"
+        ]
+      }
     }
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-6.11": [
-    {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
-      "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
-      },
-      "summary": {
-        "conclusion": "failure",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -109133,6 +109149,22 @@
         "id": "5222",
         "author": "mauriciovasquezbernal",
         "title": "gadgets: Add profile_cude"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
+      "pull_request": {
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
@@ -109144,22 +109176,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-6.6": [
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
-      "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
-      },
-      "summary": {
-        "conclusion": "failure",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19748_1",
       "run_id": "20353742870",
       "ref_name": "5171/merge",
@@ -111449,25 +111465,25 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "gadgets-kernel-unittest_gadgets-unittest-kernel-6.10": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": null,
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "gadgets-kernel-unittest_gadgets-unittest-kernel-6.10": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -113758,25 +113774,25 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "gadgets-kernel-unittest_gadgets-unittest-kernel-5.10": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": null,
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "gadgets-kernel-unittest_gadgets-unittest-kernel-5.10": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -116067,25 +116083,25 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "gadgets-kernel-unittest_gadgets-unittest-kernel-5.15": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": null,
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "gadgets-kernel-unittest_gadgets-unittest-kernel-5.15": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -118376,25 +118392,25 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "gadgets-kernel-unittest_gadgets-unittest-kernel-5.4": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": null,
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "gadgets-kernel-unittest_gadgets-unittest-kernel-5.4": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -120652,25 +120668,25 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "gadgets-kernel-unittest_gadgets-unittest-kernel-6.1": [
+    },
     {
-      "id": "19746_1",
-      "run_id": "20353407596",
-      "ref_name": "5171/merge",
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
       "pull_request": {
-        "id": "5171",
-        "author": "mauriciovasquezbernal",
-        "title": "tree-wide: Switch to go 1.25"
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": null,
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "gadgets-kernel-unittest_gadgets-unittest-kernel-6.1": [
     {
       "id": "19748_1",
       "run_id": "20353742870",
@@ -122950,6 +122966,22 @@
         "id": "5222",
         "author": "mauriciovasquezbernal",
         "title": "gadgets: Add profile_cude"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19882_1",
+      "run_id": "21240154025",
+      "ref_name": "5223/merge",
+      "pull_request": {
+        "id": "5223",
+        "author": "eiffel-fl",
+        "title": "ci: Remove AKS integration tests from release needs."
       },
       "summary": {
         "conclusion": "success",
