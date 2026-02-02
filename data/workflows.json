@@ -1,37 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "19840_1",
-      "run_id": "20965528725",
-      "ref_name": "5003/merge",
-      "pull_request": {
-        "id": "5003",
-        "author": "mauriciovasquezbernal",
-        "title": "exporters: Add otel profiles"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19843_1",
       "run_id": "20982022640",
       "ref_name": "5206/merge",
@@ -3077,6 +3046,37 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -3103,37 +3103,6 @@
   ],
   "test-integration-k8s-ig_cri-o": [
     {
-      "id": "19838_1",
-      "run_id": "20953498648",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19840_1",
       "run_id": "20965528725",
       "ref_name": "5003/merge",
@@ -6201,17 +6170,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "19840_1",
-      "run_id": "20965528725",
-      "ref_name": "5003/merge",
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
       "pull_request": {
-        "id": "5003",
-        "author": "mauriciovasquezbernal",
-        "title": "exporters: Add otel profiles"
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -6234,7 +6201,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "19843_1",
       "run_id": "20982022640",
@@ -9303,60 +9272,40 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "19821_1",
-      "run_id": "20853914060",
-      "ref_name": "5191/merge",
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
       "pull_request": {
-        "id": "5191",
-        "author": "matthyx",
-        "title": "k8s: skip KubeIPResolver/KubeNameResolver when kubeconfig missing; honor KUBECONFIG env var"
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOomKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
-          "TestAuditSeccomp",
-          "TestRunInsecure",
-          "TestTraceTCPretrans"
-        ]
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "19822_1",
       "run_id": "20854924939",
@@ -14414,12 +14363,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -14467,7 +14414,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "19833_1",
       "run_id": "20946658188",
@@ -19530,12 +19479,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -19583,7 +19530,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "19833_1",
       "run_id": "20946658188",
@@ -24637,28 +24586,60 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "19833_1",
-      "run_id": "20946658188",
-      "ref_name": "5205/merge",
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
       "pull_request": {
-        "id": "5205",
-        "author": "dependabot[bot]",
-        "title": "Dockerfiles: Bump debian from `d5d3f9c` to `94c4d59` in /Dockerfiles"
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers"
+          "TestAdviseNetworkpolicyGadget",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTCPDump",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceloop"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestTraceTCPretrans"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "19839_1",
       "run_id": "20953843309",
@@ -26529,6 +26510,25 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -26543,25 +26543,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "19833_1",
-      "run_id": "20946658188",
-      "ref_name": "5205/merge",
-      "pull_request": {
-        "id": "5205",
-        "author": "dependabot[bot]",
-        "title": "Dockerfiles: Bump debian from `d5d3f9c` to `94c4d59` in /Dockerfiles"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19839_1",
       "run_id": "20953843309",
       "ref_name": "5204/merge",
@@ -28441,12 +28422,10 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-aks_AzureLinux-amd64": [
+    },
     {
-      "id": "19501_1",
-      "run_id": "19631953225",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -28454,48 +28433,17 @@
         "title": ""
       },
       "summary": {
-        "conclusion": "failure",
+        "conclusion": "success",
         "pass": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceDNS",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOomKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceloop"
+          "TestFilterByContainerName",
+          "TestWatchContainers"
         ],
-        "fail": [
-          "TestTraceDNSTCP"
-        ],
-        "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestAuditSeccomp",
-          "TestRunInsecure",
-          "TestTraceCapabilities",
-          "TestTraceTCPretrans"
-        ]
+        "fail": null,
+        "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-aks_AzureLinux-amd64": [
     {
       "id": "19502_1",
       "run_id": "19631965319",
@@ -33801,12 +33749,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-aks_AzureLinux-arm64": [
+    },
     {
-      "id": "19501_1",
-      "run_id": "19631953225",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -33854,7 +33800,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aks_AzureLinux-arm64": [
     {
       "id": "19502_1",
       "run_id": "19631965319",
@@ -39177,12 +39125,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-aks_Ubuntu-amd64": [
+    },
     {
-      "id": "19499_1",
-      "run_id": "19628916487",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -39200,6 +39146,7 @@
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTCPDump",
+          "TestTopBlockio",
           "TestTopFile",
           "TestTopTcp",
           "TestTraceBind",
@@ -39225,12 +39172,13 @@
           "TestPodWithSecurityContext",
           "TestAuditSeccomp",
           "TestRunInsecure",
-          "TestTopBlockio",
           "TestTraceCapabilities",
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aks_Ubuntu-amd64": [
     {
       "id": "19501_1",
       "run_id": "19631953225",
@@ -44563,12 +44511,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-aks_Ubuntu-arm64": [
+    },
     {
-      "id": "19501_1",
-      "run_id": "19631953225",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -44616,7 +44562,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-aks_Ubuntu-arm64": [
     {
       "id": "19502_1",
       "run_id": "19631965319",
@@ -49909,6 +49857,57 @@
     {
       "id": "19975_1",
       "run_id": "21516601362",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicyGadget",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTCPDump",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceloop"
+        ],
+        "fail": null,
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestTopBlockio",
+          "TestTraceCapabilities",
+          "TestTraceTCPretrans"
+        ]
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -57438,57 +57437,6 @@
   ],
   "test-integration-eks_EKS-amd64": [
     {
-      "id": "19560_1",
-      "run_id": "19814676233",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOomKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestAuditSeccomp",
-          "TestRunInsecure",
-          "TestTopBlockio",
-          "TestTraceCapabilities",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "19559_2",
       "run_id": "19814612645",
       "ref_name": "v0.47.0",
@@ -62602,12 +62550,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-eks_EKS-arm64": [
+    },
     {
-      "id": "19537_1",
-      "run_id": "19737564162",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -62655,7 +62601,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-eks_EKS-arm64": [
     {
       "id": "19542_1",
       "run_id": "19759236575",
@@ -67710,12 +67658,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-gke_GKE-amd64": [
+    },
     {
-      "id": "19562_1",
-      "run_id": "19817676980",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -67733,13 +67679,12 @@
           "TestSnapshotProcess",
           "TestSnapshotSocket",
           "TestTCPDump",
-          "TestTopBlockio",
           "TestTopFile",
           "TestTopTcp",
           "TestTraceBind",
-          "TestTraceCapabilities",
           "TestTraceDNS",
           "TestTraceDNSTCP",
+          "TestTraceExec",
           "TestTraceFSSlower",
           "TestTraceMount",
           "TestTraceOomKill",
@@ -67759,11 +67704,14 @@
           "TestPodWithSecurityContext",
           "TestAuditSeccomp",
           "TestRunInsecure",
-          "TestTraceExec",
+          "TestTopBlockio",
+          "TestTraceCapabilities",
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-gke_GKE-amd64": [
     {
       "id": "19564_1",
       "run_id": "19818690672",
@@ -73061,12 +73009,10 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-gke_GKE-arm64": [
+    },
     {
-      "id": "19562_1",
-      "run_id": "19817676980",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -73114,7 +73060,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-gke_GKE-arm64": [
     {
       "id": "19564_1",
       "run_id": "19818690672",
@@ -78415,6 +78363,57 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseNetworkpolicyGadget",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTCPDump",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceloop"
+        ],
+        "fail": null,
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestTraceExec",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets_test-gadgets": [
@@ -83222,51 +83221,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "19833_1",
-      "run_id": "20946658188",
-      "ref_name": "5205/merge",
-      "pull_request": {
-        "id": "5205",
-        "author": "dependabot[bot]",
-        "title": "Dockerfiles: Bump debian from `d5d3f9c` to `94c4d59` in /Dockerfiles"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestAuditSeccomp",
-          "TestRunInsecure",
-          "TestSchedCLS",
-          "TestTCPDump",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "19839_1",
       "run_id": "20953843309",
       "ref_name": "5204/merge",
@@ -87725,6 +87679,51 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceloop"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicyGadget",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestSchedCLS",
+          "TestTCPDump",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-cri-o": [
@@ -89582,51 +89581,6 @@
     }
   ],
   "test-gadgets-local_test-gadgets-local-docker": [
-    {
-      "id": "19833_1",
-      "run_id": "20946658188",
-      "ref_name": "5205/merge",
-      "pull_request": {
-        "id": "5205",
-        "author": "dependabot[bot]",
-        "title": "Dockerfiles: Bump debian from `d5d3f9c` to `94c4d59` in /Dockerfiles"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAuditSeccomp",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestRunInsecure",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceTCPretrans",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestTraceOomKill"
-        ]
-      }
-    },
     {
       "id": "19839_1",
       "run_id": "20953843309",
@@ -94063,12 +94017,10 @@
           "TestTraceOomKill"
         ]
       }
-    }
-  ],
-  "gadgets-unittest_gadgets-unittest": [
+    },
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -94078,105 +94030,41 @@
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseSeccompGadget/specific_container",
-          "TestAdviseSeccompGadget/all_containers",
           "TestAuditSeccomp",
-          "TestBpfstatsGadget/by_gadget",
-          "TestBpfstatsGadget/by_programs",
-          "TestInspectCmd",
-          "TestExtraInfoLeak",
-          "TestInnerFields",
-          "TestDeadlock",
-          "TestFdpassGadget/basic",
-          "TestFsnotifyGadget/captures_inotify_event",
-          "TestProfileBlockio",
-          "TestProfileCpu",
-          "TestProfileQdiscLatency",
-          "TestProfileTcprtt",
-          "TestSnapshotFileGadget/captures_events_with_no_filter",
-          "TestSnapshotFileGadget/captures_events_with_matching_filter",
-          "TestSnapshotFileGadget/captures_no_events_with_no_matching_filter",
-          "TestSnapshotProcessGadget/captures_no_events_with_no_matching_filter",
-          "TestSnapshotProcessGadget/captures_events_with_matching_filter",
-          "TestSnapshotProcessGadget/no_threads_are_captured",
-          "TestSnapshotProcessGadget/captures_events_with_no_filter",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestRunInsecure",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
           "TestSnapshotSocket",
-          "TestTraceDns",
+          "TestTCPDump",
           "TestTopBlockio",
-          "TestTopFileGadget/captures_events_with_filter",
-          "TestTopProcess",
+          "TestTopFile",
           "TestTopTcp",
-          "TestTraceBind/TCP4_loopback_on_fixed_port",
-          "TestTraceBind/TCP4_loopback_on_ephemeral_port",
-          "TestTraceBind/TCP6_loopback_on_fixed_port",
-          "TestTraceBind/UDP4_loopback_on_high_port",
-          "TestTraceBind/UDP6_loopback_on_ephemeral_port",
-          "TestTraceCapabilitiesGadget/raw_socket",
-          "TestTraceCapabilitiesGadget/device_access",
-          "TestTraceCapabilitiesGadget/perf_event_open",
-          "TestTraceCapabilitiesGadget/nice",
-          "TestNonAuditCapabilities",
-          "TestTraceExecGadget/uid_gid",
-          "TestTraceExecGadget/mount_namespace_filter_blocked",
-          "TestTraceExecGadget/error",
-          "TestTraceExecGadget/successful_exec_from_thread",
-          "TestTraceExecGadget/failed_exec_from_thread",
-          "TestTraceExecGadget/simple_executable",
-          "TestTraceExecGadget/large_argument_list",
-          "TestTraceFsslower",
-          "TestTraceMalloc",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
           "TestTraceMount",
-          "TestTraceOomkill",
-          "TestFiltering/#00",
-          "TestFiltering/mntns=true,",
-          "TestFiltering/pid=true,",
-          "TestFiltering/tid=true,",
-          "TestFiltering/uid=true,",
-          "TestFiltering/gid=true,",
-          "TestFiltering/comm=true,",
-          "TestFiltering/mntns=false,",
-          "TestFiltering/pid=false,",
-          "TestFiltering/tid=false,",
-          "TestFiltering/uid=false,",
-          "TestFiltering/gid=false,",
-          "TestFiltering/comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=false,pid=false,tid=false,uid=false,gid=false,comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=false,comm=true,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=false,gid=true,comm=true,",
-          "TestFiltering/mntns=true,pid=true,tid=false,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=true,pid=false,tid=true,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=false,pid=true,tid=true,uid=true,gid=true,comm=true,",
-          "TestTraceOpenGadget/captures_no_events_with_no_matching_filter",
-          "TestTraceOpenGadget/captures_events_with_matching_filter",
-          "TestTraceOpenGadget/test_flags_and_mode",
-          "TestTraceOpenGadget/test_symbolic_links",
-          "TestTraceOpenGadget/test_relative_path",
-          "TestTraceOpenGadget/test_prefix_on_directory",
-          "TestTraceOpenGadget/event_has_UID_and_GID_of_user_generating_event",
-          "TestTraceOpenGadget/captures_all_events_with_no_filters_configured",
-          "TestTraceSignalGadget/kill",
-          "TestTraceSignalGadget/sigterm",
-          "TestTraceSignalGadget/sigint",
-          "TestTraceSignalGadget/sigusr1",
-          "TestTraceSignalGadget/sigusr2",
-          "TestTraceSni",
-          "TestTraceTcpGadget/captures_connect_async_err",
-          "TestTraceTcpGadget/captures_accept",
-          "TestTraceTcpGadget/captures_close",
-          "TestTraceTcpGadget/captures_connect_sync_err",
-          "TestTraceTcpdrop",
-          "TestTraceTcpretrans",
-          "TestTraceloop",
-          "TestTtysnoopFull/simple_write"
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTCPretrans",
+          "TestTraceloop"
         ],
         "fail": null,
         "skip": [
-          "TestTraceLsm"
+          "TestAdviseNetworkpolicyGadget",
+          "TestTraceOomKill"
         ]
       }
-    },
+    }
+  ],
+  "gadgets-unittest_gadgets-unittest": [
     {
       "id": "19833_1",
       "run_id": "20946658188",
@@ -105185,12 +105073,10 @@
           "TestTraceLsm"
         ]
       }
-    }
-  ],
-  "gadgets-kernel-unittest_gadgets-unittest-kernel-6.11": [
+    },
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
+      "id": "19995_2",
+      "run_id": "21584570646",
       "ref_name": "main",
       "pull_request": {
         "id": "",
@@ -105199,11 +105085,108 @@
       },
       "summary": {
         "conclusion": "success",
-        "pass": null,
+        "pass": [
+          "TestAdviseSeccompGadget/all_containers",
+          "TestAdviseSeccompGadget/specific_container",
+          "TestAuditSeccomp",
+          "TestBpfstatsGadget/by_gadget",
+          "TestBpfstatsGadget/by_programs",
+          "TestInspectCmd",
+          "TestExtraInfoLeak",
+          "TestInnerFields",
+          "TestDeadlock",
+          "TestFdpassGadget/basic",
+          "TestFsnotifyGadget/captures_inotify_event",
+          "TestProfileBlockio",
+          "TestProfileCpu",
+          "TestProfileQdiscLatency",
+          "TestProfileTcprtt",
+          "TestSnapshotFileGadget/captures_events_with_no_filter",
+          "TestSnapshotFileGadget/captures_events_with_matching_filter",
+          "TestSnapshotFileGadget/captures_no_events_with_no_matching_filter",
+          "TestSnapshotProcessGadget/captures_events_with_no_filter",
+          "TestSnapshotProcessGadget/captures_no_events_with_no_matching_filter",
+          "TestSnapshotProcessGadget/captures_events_with_matching_filter",
+          "TestSnapshotProcessGadget/no_threads_are_captured",
+          "TestSnapshotSocket",
+          "TestTraceDns",
+          "TestTopBlockio",
+          "TestTopFileGadget/captures_events_with_filter",
+          "TestTopProcess",
+          "TestTopTcp",
+          "TestTraceBind/TCP4_loopback_on_fixed_port",
+          "TestTraceBind/TCP4_loopback_on_ephemeral_port",
+          "TestTraceBind/TCP6_loopback_on_fixed_port",
+          "TestTraceBind/UDP4_loopback_on_high_port",
+          "TestTraceBind/UDP6_loopback_on_ephemeral_port",
+          "TestTraceCapabilitiesGadget/raw_socket",
+          "TestTraceCapabilitiesGadget/device_access",
+          "TestTraceCapabilitiesGadget/perf_event_open",
+          "TestTraceCapabilitiesGadget/nice",
+          "TestNonAuditCapabilities",
+          "TestTraceExecGadget/mount_namespace_filter_blocked",
+          "TestTraceExecGadget/error",
+          "TestTraceExecGadget/successful_exec_from_thread",
+          "TestTraceExecGadget/failed_exec_from_thread",
+          "TestTraceExecGadget/simple_executable",
+          "TestTraceExecGadget/large_argument_list",
+          "TestTraceExecGadget/uid_gid",
+          "TestTraceFsslower",
+          "TestTraceMalloc",
+          "TestTraceMount",
+          "TestTraceOomkill",
+          "TestFiltering/#00",
+          "TestFiltering/mntns=true,",
+          "TestFiltering/pid=true,",
+          "TestFiltering/tid=true,",
+          "TestFiltering/uid=true,",
+          "TestFiltering/gid=true,",
+          "TestFiltering/comm=true,",
+          "TestFiltering/mntns=false,",
+          "TestFiltering/pid=false,",
+          "TestFiltering/tid=false,",
+          "TestFiltering/uid=false,",
+          "TestFiltering/gid=false,",
+          "TestFiltering/comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=false,pid=false,tid=false,uid=false,gid=false,comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=false,comm=true,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=false,gid=true,comm=true,",
+          "TestFiltering/mntns=true,pid=true,tid=false,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=true,pid=false,tid=true,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=false,pid=true,tid=true,uid=true,gid=true,comm=true,",
+          "TestTraceOpenGadget/captures_all_events_with_no_filters_configured",
+          "TestTraceOpenGadget/captures_no_events_with_no_matching_filter",
+          "TestTraceOpenGadget/captures_events_with_matching_filter",
+          "TestTraceOpenGadget/test_flags_and_mode",
+          "TestTraceOpenGadget/test_symbolic_links",
+          "TestTraceOpenGadget/test_relative_path",
+          "TestTraceOpenGadget/test_prefix_on_directory",
+          "TestTraceOpenGadget/event_has_UID_and_GID_of_user_generating_event",
+          "TestTraceSignalGadget/kill",
+          "TestTraceSignalGadget/sigterm",
+          "TestTraceSignalGadget/sigint",
+          "TestTraceSignalGadget/sigusr1",
+          "TestTraceSignalGadget/sigusr2",
+          "TestTraceSni",
+          "TestTraceTcpGadget/captures_close",
+          "TestTraceTcpGadget/captures_connect_sync_err",
+          "TestTraceTcpGadget/captures_connect_async_err",
+          "TestTraceTcpGadget/captures_accept",
+          "TestTraceTcpdrop",
+          "TestTraceTcpretrans",
+          "TestTraceloop",
+          "TestTtysnoopFull/simple_write"
+        ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestTraceLsm"
+        ]
       }
-    },
+    }
+  ],
+  "gadgets-kernel-unittest_gadgets-unittest-kernel-6.11": [
     {
       "id": "19833_1",
       "run_id": "20946658188",
@@ -106780,6 +106763,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -106791,22 +106790,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-6.6": [
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19833_1",
       "run_id": "20946658188",
       "ref_name": "5205/merge",
@@ -108382,6 +108365,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -108393,22 +108392,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-6.10": [
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19833_1",
       "run_id": "20946658188",
       "ref_name": "5205/merge",
@@ -109984,6 +109967,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -109995,22 +109994,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-5.10": [
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19833_1",
       "run_id": "20946658188",
       "ref_name": "5205/merge",
@@ -111586,6 +111569,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -111597,22 +111596,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-5.15": [
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19833_1",
       "run_id": "20946658188",
       "ref_name": "5205/merge",
@@ -113188,6 +113171,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -113199,22 +113198,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-5.4": [
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19833_1",
       "run_id": "20946658188",
       "ref_name": "5205/merge",
@@ -114790,6 +114773,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
@@ -114801,22 +114800,6 @@
   ],
   "gadgets-kernel-unittest_gadgets-unittest-kernel-6.1": [
     {
-      "id": "19822_1",
-      "run_id": "20854924939",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": null,
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "19833_1",
       "run_id": "20946658188",
       "ref_name": "5205/merge",
@@ -116392,6 +116375,22 @@
         "id": "5251",
         "author": "dependabot[bot]",
         "title": "ci: bump github/codeql-action from 4.31.11 to 4.32.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": null,
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "19995_2",
+      "run_id": "21584570646",
+      "ref_name": "main",
+      "pull_request": {
+        "id": "",
+        "author": "",
+        "title": ""
       },
       "summary": {
         "conclusion": "success",
