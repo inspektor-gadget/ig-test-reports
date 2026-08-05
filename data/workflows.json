@@ -1,38 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "21362_1",
-      "run_id": "30098751623",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/FilteredListByDigest",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "21364_1",
       "run_id": "30111010509",
       "ref_name": "5706/merge",
@@ -3199,17 +3167,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "21362_1",
-      "run_id": "30098751623",
-      "ref_name": "main",
+      "id": "21450_1",
+      "run_id": "30998907695",
+      "ref_name": "5730/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "5730",
+        "author": "alban",
+        "title": "container-hook: harden the fanotify hook against freezes and lost events"
       },
       "summary": {
         "conclusion": "success",
@@ -3233,7 +3199,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "21364_1",
       "run_id": "30111010509",
@@ -6375,6 +6343,38 @@
     {
       "id": "21447_1",
       "run_id": "30934642785",
+      "ref_name": "5730/merge",
+      "pull_request": {
+        "id": "5730",
+        "author": "alban",
+        "title": "container-hook: harden the fanotify hook against freezes and lost events"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/FilteredListByDigest",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "21450_1",
+      "run_id": "30998907695",
       "ref_name": "5730/merge",
       "pull_request": {
         "id": "5730",
