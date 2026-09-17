@@ -1,38 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "21540_1",
-      "run_id": "32326903835",
-      "ref_name": "5734/merge",
-      "pull_request": {
-        "id": "5734",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group across 1 directory with 8 updates"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/FilteredListByDigest",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "21543_1",
       "run_id": "32342270978",
       "ref_name": "main",
@@ -3303,17 +3271,15 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "21538_1",
-      "run_id": "32235514128",
-      "ref_name": "5747/merge",
+      "id": "21738_1",
+      "run_id": "35226828941",
+      "ref_name": "5799/merge",
       "pull_request": {
-        "id": "5747",
-        "author": "alban",
-        "title": "tests: gadgets/profile_cpu: Run OTel stacks workload in a container"
+        "id": "5799",
+        "author": "mqasimsarfraz",
+        "title": "advise_networkpolicy: Handle host network traffic"
       },
       "summary": {
         "conclusion": "success",
@@ -3335,9 +3301,13 @@
           "TestListContainers/NegativeFilteredListWithNamespace"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "21539_1",
       "run_id": "32253456094",
@@ -6625,17 +6595,15 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "21540_1",
-      "run_id": "32326903835",
-      "ref_name": "5734/merge",
+      "id": "21738_1",
+      "run_id": "35226828941",
+      "ref_name": "5799/merge",
       "pull_request": {
-        "id": "5734",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group across 1 directory with 8 updates"
+        "id": "5799",
+        "author": "mqasimsarfraz",
+        "title": "advise_networkpolicy: Handle host network traffic"
       },
       "summary": {
         "conclusion": "success",
@@ -6657,9 +6625,13 @@
           "TestListContainers/NegativeFilteredListWithNamespace"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "21543_1",
       "run_id": "32342270978",
@@ -9922,6 +9894,40 @@
         "id": "5775",
         "author": "alban",
         "title": "pkg/symbolizer/otel: rebase otel-ebpf-profiler fork onto upstream main"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/FilteredListByDigest",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
+      }
+    },
+    {
+      "id": "21738_1",
+      "run_id": "35226828941",
+      "ref_name": "5799/merge",
+      "pull_request": {
+        "id": "5799",
+        "author": "mqasimsarfraz",
+        "title": "advise_networkpolicy: Handle host network traffic"
       },
       "summary": {
         "conclusion": "success",
@@ -28411,26 +28417,6 @@
   ],
   "test-integration-non-k8s-ig_containerd": [
     {
-      "id": "21537_2",
-      "run_id": "32230445934",
-      "ref_name": "5719/merge",
-      "pull_request": {
-        "id": "5719",
-        "author": "alban",
-        "title": "gadgets: Serialize gadget push/sign on OCI registries and retry flaky errors"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestFilterByContainerImageDigest"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "21540_1",
       "run_id": "32326903835",
       "ref_name": "5734/merge",
@@ -30409,17 +30395,15 @@
         "fail": null,
         "skip": null
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_docker": [
+    },
     {
-      "id": "21537_2",
-      "run_id": "32230445934",
-      "ref_name": "5719/merge",
+      "id": "21738_1",
+      "run_id": "35226828941",
+      "ref_name": "5799/merge",
       "pull_request": {
-        "id": "5719",
-        "author": "alban",
-        "title": "gadgets: Serialize gadget push/sign on OCI registries and retry flaky errors"
+        "id": "5799",
+        "author": "mqasimsarfraz",
+        "title": "advise_networkpolicy: Handle host network traffic"
       },
       "summary": {
         "conclusion": "success",
@@ -30431,7 +30415,9 @@
         "fail": null,
         "skip": null
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_docker": [
     {
       "id": "21540_1",
       "run_id": "32326903835",
@@ -32396,6 +32382,26 @@
         "id": "5775",
         "author": "alban",
         "title": "pkg/symbolizer/otel: rebase otel-ebpf-profiler fork onto upstream main"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestFilterByContainerImageDigest"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "21738_1",
+      "run_id": "35226828941",
+      "ref_name": "5799/merge",
+      "pull_request": {
+        "id": "5799",
+        "author": "mqasimsarfraz",
+        "title": "advise_networkpolicy: Handle host network traffic"
       },
       "summary": {
         "conclusion": "success",
