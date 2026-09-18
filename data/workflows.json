@@ -1,38 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "21555_1",
-      "run_id": "32383254359",
-      "ref_name": "5761/merge",
-      "pull_request": {
-        "id": "5761",
-        "author": "alban",
-        "title": "go.mod: Bump golang.org/x/mod to v0.40.0"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/FilteredListByDigest",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "21556_1",
       "run_id": "32383690909",
       "ref_name": "main",
@@ -3311,41 +3279,27 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
+    },
+    {
+      "id": "21745_2",
+      "run_id": "35323988753",
+      "ref_name": "5802/merge",
+      "pull_request": {
+        "id": "5802",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc from 0.18.0 to 0.21.0"
+      },
+      "summary": {
+        "conclusion": "cancelled",
+        "pass": null,
+        "fail": null,
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
+      }
     }
   ],
   "test-integration-k8s-ig_cri-o": [
-    {
-      "id": "21543_1",
-      "run_id": "32342270978",
-      "ref_name": "main",
-      "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/FilteredListByDigest",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
     {
       "id": "21552_1",
       "run_id": "32372617769",
@@ -6641,20 +6595,18 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "21555_1",
-      "run_id": "32383254359",
-      "ref_name": "5761/merge",
+      "id": "21745_2",
+      "run_id": "35323988753",
+      "ref_name": "5802/merge",
       "pull_request": {
-        "id": "5761",
-        "author": "alban",
-        "title": "go.mod: Bump golang.org/x/mod to v0.40.0"
+        "id": "5802",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc from 0.18.0 to 0.21.0"
       },
       "summary": {
-        "conclusion": "success",
+        "conclusion": "cancelled",
         "pass": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
@@ -6673,9 +6625,13 @@
           "TestListContainers/NegativeFilteredListWithNamespace"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "21556_1",
       "run_id": "32383690909",
@@ -9965,6 +9921,26 @@
           "TestListContainers/NegativeFilteredListK8sContainerName",
           "TestListContainers/NegativeFilteredListWithPodName",
           "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
+      }
+    },
+    {
+      "id": "21745_2",
+      "run_id": "35323988753",
+      "ref_name": "5802/merge",
+      "pull_request": {
+        "id": "5802",
+        "author": "dependabot[bot]",
+        "title": "go: bump go.opentelemetry.io/otel/exporters/otlp/otlplog/otlploggrpc from 0.18.0 to 0.21.0"
+      },
+      "summary": {
+        "conclusion": "cancelled",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod"
         ],
         "fail": null,
         "skip": [
