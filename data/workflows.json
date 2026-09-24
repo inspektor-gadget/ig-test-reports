@@ -1,38 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "21624_1",
-      "run_id": "32925123686",
-      "ref_name": "5734/merge",
-      "pull_request": {
-        "id": "5734",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group across 1 directory with 8 updates"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/FilteredListByDigest",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "21641_1",
       "run_id": "33063026944",
       "ref_name": "main",
@@ -3381,17 +3349,15 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "21613_1",
-      "run_id": "32842531081",
-      "ref_name": "5679/merge",
+      "id": "21790_1",
+      "run_id": "36006101480",
+      "ref_name": "5808/merge",
       "pull_request": {
-        "id": "5679",
-        "author": "flyth",
-        "title": "feat: add multi-tenancy support (namespace based)"
+        "id": "5808",
+        "author": "eiffel-fl",
+        "title": "[BACKPORT] USDT related fixes"
       },
       "summary": {
         "conclusion": "success",
@@ -3417,7 +3383,9 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "21624_1",
       "run_id": "32925123686",
@@ -6781,17 +6749,15 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "21624_1",
-      "run_id": "32925123686",
-      "ref_name": "5734/merge",
+      "id": "21790_1",
+      "run_id": "36006101480",
+      "ref_name": "5808/merge",
       "pull_request": {
-        "id": "5734",
-        "author": "dependabot[bot]",
-        "title": "go: bump the k8s group across 1 directory with 8 updates"
+        "id": "5808",
+        "author": "eiffel-fl",
+        "title": "[BACKPORT] USDT related fixes"
       },
       "summary": {
         "conclusion": "success",
@@ -6813,9 +6779,13 @@
           "TestListContainers/NegativeFilteredListWithNamespace"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "21641_1",
       "run_id": "33063026944",
@@ -10142,6 +10112,40 @@
         "id": "",
         "author": "",
         "title": ""
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/FilteredListByDigest",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
+        ]
+      }
+    },
+    {
+      "id": "21790_1",
+      "run_id": "36006101480",
+      "ref_name": "5808/merge",
+      "pull_request": {
+        "id": "5808",
+        "author": "eiffel-fl",
+        "title": "[BACKPORT] USDT related fixes"
       },
       "summary": {
         "conclusion": "success",
