@@ -1,40 +1,6 @@
 {
   "test-integration-k8s-ig_containerd": [
     {
-      "id": "21762_1",
-      "run_id": "35732148338",
-      "ref_name": "5775/merge",
-      "pull_request": {
-        "id": "5775",
-        "author": "alban",
-        "title": "pkg/symbolizer/otel: rebase otel-ebpf-profiler fork onto upstream main"
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestEnrichmentPodLabelExistingPod",
-          "TestEnrichmentPodLabelNewPod",
-          "TestWatchCreatedContainers",
-          "TestWatchDeletedContainers",
-          "TestPodWithSecurityContext",
-          "TestListContainers/ListAll",
-          "TestListContainers/FilteredList",
-          "TestListContainers/FilteredListK8sContainerName",
-          "TestListContainers/FilteredListWithPodName",
-          "TestListContainers/FilteredListWithNamespace",
-          "TestListContainers/FilteredListByDigest",
-          "TestListContainers/NegativeFilteredList",
-          "TestListContainers/NegativeFilteredListK8sContainerName",
-          "TestListContainers/NegativeFilteredListWithPodName",
-          "TestListContainers/NegativeFilteredListWithNamespace"
-        ],
-        "fail": null,
-        "skip": [
-          "TestMultiTenancyTokenReviewNamespacePolicy"
-        ]
-      }
-    },
-    {
       "id": "21763_1",
       "run_id": "35737685968",
       "ref_name": "5801/merge",
@@ -3399,17 +3365,15 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_cri-o": [
+    },
     {
-      "id": "21760_1",
-      "run_id": "35726660300",
-      "ref_name": "citest/alban_update_otel",
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "",
-        "author": "",
-        "title": ""
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
@@ -3435,7 +3399,9 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_cri-o": [
     {
       "id": "21761_1",
       "run_id": "35727962397",
@@ -6801,17 +6767,15 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-k8s-ig_docker": [
+    },
     {
-      "id": "21762_1",
-      "run_id": "35732148338",
-      "ref_name": "5775/merge",
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "5775",
-        "author": "alban",
-        "title": "pkg/symbolizer/otel: rebase otel-ebpf-profiler fork onto upstream main"
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
@@ -6837,7 +6801,9 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-k8s-ig_docker": [
     {
       "id": "21763_1",
       "run_id": "35737685968",
@@ -10203,71 +10169,43 @@
           "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_containerd": [
+    },
     {
-      "id": "21758_1",
-      "run_id": "35589671802",
-      "ref_name": "5716/merge",
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "5716",
-        "author": "eiffel-fl",
-        "title": "cmd: Add --drop-cap-sys-admin to deploy subcommand."
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestMultiTenancyTokenReviewNamespacePolicy",
-          "TestAdviseNetworkpolicyGadget",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestSchedCLS",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopProcess",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceLink",
-          "TestTraceMount",
-          "TestTraceOomKill",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
           "TestEnrichmentPodLabelExistingPod",
           "TestEnrichmentPodLabelNewPod",
-          "TestListContainers",
           "TestWatchCreatedContainers",
           "TestWatchDeletedContainers",
           "TestPodWithSecurityContext",
-          "TestAuditSeccomp",
-          "TestCiGpu",
-          "TestRunInsecure",
-          "TestCiStacks",
-          "TestIterMapElem",
-          "TestCiUprobe",
-          "TestGpuTop",
-          "TestGpuTopPerPid",
-          "TestProfileCpuOtelStacks",
-          "TestTraceGpuStarvation",
-          "TestTraceTCPretrans"
+          "TestListContainers/ListAll",
+          "TestListContainers/FilteredList",
+          "TestListContainers/FilteredListK8sContainerName",
+          "TestListContainers/FilteredListWithPodName",
+          "TestListContainers/FilteredListWithNamespace",
+          "TestListContainers/FilteredListByDigest",
+          "TestListContainers/NegativeFilteredList",
+          "TestListContainers/NegativeFilteredListK8sContainerName",
+          "TestListContainers/NegativeFilteredListWithPodName",
+          "TestListContainers/NegativeFilteredListWithNamespace"
+        ],
+        "fail": null,
+        "skip": [
+          "TestMultiTenancyTokenReviewNamespacePolicy"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_containerd": [
     {
       "id": "21757_1",
       "run_id": "35588878855",
@@ -16379,17 +16317,15 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_cri-o": [
+    },
     {
-      "id": "21755_1",
-      "run_id": "35556289957",
-      "ref_name": "5619/merge",
+      "id": "21872_2",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "5619",
+        "id": "5750",
         "author": "dependabot[bot]",
-        "title": "go: bump the otel group across 1 directory with 11 updates"
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
@@ -16443,7 +16379,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_cri-o": [
     {
       "id": "21758_1",
       "run_id": "35589671802",
@@ -22547,17 +22485,15 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-minikube_docker": [
+    },
     {
-      "id": "21757_1",
-      "run_id": "35588878855",
-      "ref_name": "5801/merge",
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "5801",
-        "author": "eiffel-fl",
-        "title": "Makefile: Add DOCKER_USER_FLAG to set --user."
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
@@ -22611,7 +22547,9 @@
           "TestTraceTCPretrans"
         ]
       }
-    },
+    }
+  ],
+  "test-integration-minikube_docker": [
     {
       "id": "21759_1",
       "run_id": "35726623406",
@@ -28732,29 +28670,71 @@
           "TestTraceTCPretrans"
         ]
       }
-    }
-  ],
-  "test-integration-non-k8s-ig_containerd": [
+    },
     {
-      "id": "21758_1",
-      "run_id": "35589671802",
-      "ref_name": "5716/merge",
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "5716",
-        "author": "eiffel-fl",
-        "title": "cmd: Add --drop-cap-sys-admin to deploy subcommand."
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestFilterByContainerImageDigest"
+          "TestMultiTenancyTokenReviewNamespacePolicy",
+          "TestAdviseNetworkpolicyGadget",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestSchedCLS",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTCPDump",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopProcess",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceLink",
+          "TestTraceMount",
+          "TestTraceOomKill",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceloop"
         ],
         "fail": null,
-        "skip": null
+        "skip": [
+          "TestEnrichmentPodLabelExistingPod",
+          "TestEnrichmentPodLabelNewPod",
+          "TestListContainers",
+          "TestWatchCreatedContainers",
+          "TestWatchDeletedContainers",
+          "TestPodWithSecurityContext",
+          "TestAuditSeccomp",
+          "TestCiGpu",
+          "TestRunInsecure",
+          "TestCiStacks",
+          "TestIterMapElem",
+          "TestCiUprobe",
+          "TestGpuTop",
+          "TestGpuTopPerPid",
+          "TestProfileCpuOtelStacks",
+          "TestTraceGpuStarvation",
+          "TestTraceTCPretrans"
+        ]
       }
-    },
+    }
+  ],
+  "test-integration-non-k8s-ig_containerd": [
     {
       "id": "21757_1",
       "run_id": "35588878855",
@@ -30723,6 +30703,26 @@
         "id": "5777",
         "author": "dependabot[bot]",
         "title": "ci: bump azure/login from 3.0.0 to 3.1.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestFilterByContainerImageDigest"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
+      "pull_request": {
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
@@ -30738,26 +30738,6 @@
   ],
   "test-integration-non-k8s-ig_docker": [
     {
-      "id": "21758_1",
-      "run_id": "35589671802",
-      "ref_name": "5716/merge",
-      "pull_request": {
-        "id": "5716",
-        "author": "eiffel-fl",
-        "title": "cmd: Add --drop-cap-sys-admin to deploy subcommand."
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestFilterByContainerName",
-          "TestWatchContainers",
-          "TestFilterByContainerImageDigest"
-        ],
-        "fail": null,
-        "skip": null
-      }
-    },
-    {
       "id": "21757_1",
       "run_id": "35588878855",
       "ref_name": "5801/merge",
@@ -32725,6 +32705,26 @@
         "id": "5777",
         "author": "dependabot[bot]",
         "title": "ci: bump azure/login from 3.0.0 to 3.1.0"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestFilterByContainerName",
+          "TestWatchContainers",
+          "TestFilterByContainerImageDigest"
+        ],
+        "fail": null,
+        "skip": null
+      }
+    },
+    {
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
+      "pull_request": {
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
@@ -90764,61 +90764,6 @@
   ],
   "test-gadgets-local_test-gadgets-local-containerd": [
     {
-      "id": "21757_1",
-      "run_id": "35588878855",
-      "ref_name": "5801/merge",
-      "pull_request": {
-        "id": "5801",
-        "author": "eiffel-fl",
-        "title": "Makefile: Add DOCKER_USER_FLAG to set --user."
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestCiGpu",
-          "TestCiStacks",
-          "TestIterMapElem",
-          "TestGpuTop",
-          "TestGpuTopPerPid",
-          "TestProfileCpuOtelStacks",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopProcess",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceGpuStarvation",
-          "TestTraceLink",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceTCP",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestAuditSeccomp",
-          "TestRunInsecure",
-          "TestSchedCLS",
-          "TestCiUprobe",
-          "TestTCPDump",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceOomKill",
-          "TestTraceSNI",
-          "TestTraceTCPretrans"
-        ]
-      }
-    },
-    {
       "id": "21759_1",
       "run_id": "35726623406",
       "ref_name": "5775/merge",
@@ -96283,6 +96228,61 @@
           "TestTraceTCPretrans"
         ]
       }
+    },
+    {
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
+      "pull_request": {
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestCiGpu",
+          "TestCiStacks",
+          "TestIterMapElem",
+          "TestGpuTop",
+          "TestGpuTopPerPid",
+          "TestProfileCpuOtelStacks",
+          "TestSnapshotProcess",
+          "TestSnapshotSocket",
+          "TestTopBlockio",
+          "TestTopFile",
+          "TestTopProcess",
+          "TestTopTcp",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceExec",
+          "TestTraceFSSlower",
+          "TestTraceGpuStarvation",
+          "TestTraceLink",
+          "TestTraceMount",
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceTCP",
+          "TestTraceloop"
+        ],
+        "fail": null,
+        "skip": [
+          "TestAdviseNetworkpolicyGadget",
+          "TestAuditSeccomp",
+          "TestRunInsecure",
+          "TestSchedCLS",
+          "TestCiUprobe",
+          "TestTCPDump",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceOomKill",
+          "TestTraceSNI",
+          "TestTraceTCPretrans"
+        ]
+      }
     }
   ],
   "test-gadgets-k8s_test-gadgets-k8s-cri-o": [
@@ -98140,61 +98140,6 @@
     }
   ],
   "test-gadgets-local_test-gadgets-local-docker": [
-    {
-      "id": "21757_1",
-      "run_id": "35588878855",
-      "ref_name": "5801/merge",
-      "pull_request": {
-        "id": "5801",
-        "author": "eiffel-fl",
-        "title": "Makefile: Add DOCKER_USER_FLAG to set --user."
-      },
-      "summary": {
-        "conclusion": "success",
-        "pass": [
-          "TestAuditSeccomp",
-          "TestContainerFiltering",
-          "TestDatasourceContainers",
-          "TestDatasourceContainersPreCreate",
-          "TestCiGpu",
-          "TestRunInsecure",
-          "TestSchedCLS",
-          "TestCiStacks",
-          "TestIterMapElem",
-          "TestCiUprobe",
-          "TestGpuTop",
-          "TestGpuTopPerPid",
-          "TestProfileCpuOtelStacks",
-          "TestSnapshotProcess",
-          "TestSnapshotSocket",
-          "TestTCPDump",
-          "TestTopBlockio",
-          "TestTopFile",
-          "TestTopProcess",
-          "TestTopTcp",
-          "TestTraceBind",
-          "TestTraceCapabilities",
-          "TestTraceDNS",
-          "TestTraceDNSTCP",
-          "TestTraceExec",
-          "TestTraceFSSlower",
-          "TestTraceGpuStarvation",
-          "TestTraceLink",
-          "TestTraceMount",
-          "TestTraceOpen",
-          "TestTraceSignal",
-          "TestTraceSNI",
-          "TestTraceTCP",
-          "TestTraceTCPretrans",
-          "TestTraceloop"
-        ],
-        "fail": null,
-        "skip": [
-          "TestAdviseNetworkpolicyGadget",
-          "TestTraceOomKill"
-        ]
-      }
-    },
     {
       "id": "21759_1",
       "run_id": "35726623406",
@@ -103674,136 +103619,64 @@
           "TestTraceOomKill"
         ]
       }
-    }
-  ],
-  "gadgets-unittest_gadgets-unittest": [
+    },
     {
-      "id": "21757_1",
-      "run_id": "35588878855",
-      "ref_name": "5801/merge",
+      "id": "21872_3",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
       "pull_request": {
-        "id": "5801",
-        "author": "eiffel-fl",
-        "title": "Makefile: Add DOCKER_USER_FLAG to set --user."
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
       },
       "summary": {
         "conclusion": "success",
         "pass": [
-          "TestAdviseSeccompGadget/specific_container",
-          "TestAdviseSeccompGadget/all_containers",
           "TestAuditSeccomp",
-          "TestBpfstatsGadget/by_gadget",
-          "TestBpfstatsGadget/by_programs",
-          "TestInspectCmd",
-          "TestExtraInfoLeak",
-          "TestInnerFields",
-          "TestDeadlock",
-          "TestFdpassGadget/basic",
-          "TestFsnotifyGadget/captures_inotify_event",
-          "TestProfileBlockio",
-          "TestProfileCpu",
-          "TestProfileCuda",
-          "TestProfileQdiscLatency",
-          "TestProfileTcprtt",
-          "TestSnapshotFileGadget/captures_events_with_matching_filter",
-          "TestSnapshotFileGadget/captures_no_events_with_no_matching_filter",
-          "TestSnapshotFileGadget/captures_events_with_no_filter",
-          "TestSnapshotProcessGadget/no_threads_are_captured",
-          "TestSnapshotProcessGadget/captures_events_with_no_filter",
-          "TestSnapshotProcessGadget/captures_no_events_with_no_matching_filter",
-          "TestSnapshotProcessGadget/captures_events_with_matching_filter",
+          "TestContainerFiltering",
+          "TestDatasourceContainers",
+          "TestDatasourceContainersPreCreate",
+          "TestCiGpu",
+          "TestRunInsecure",
+          "TestSchedCLS",
+          "TestCiStacks",
+          "TestIterMapElem",
+          "TestCiUprobe",
+          "TestGpuTop",
+          "TestGpuTopPerPid",
+          "TestProfileCpuOtelStacks",
+          "TestSnapshotProcess",
           "TestSnapshotSocket",
-          "TestTraceDns",
+          "TestTCPDump",
           "TestTopBlockio",
-          "TestTopCPUThrottle",
-          "TestTopFileGadget/captures_events_with_filter",
+          "TestTopFile",
           "TestTopProcess",
           "TestTopTcp",
-          "TestTraceBind/TCP4_loopback_on_fixed_port",
-          "TestTraceBind/TCP4_loopback_on_ephemeral_port",
-          "TestTraceBind/TCP6_loopback_on_fixed_port",
-          "TestTraceBind/UDP4_loopback_on_high_port",
-          "TestTraceBind/UDP6_loopback_on_ephemeral_port",
-          "TestTraceCapabilitiesGadget/raw_socket",
-          "TestTraceCapabilitiesGadget/device_access",
-          "TestTraceCapabilitiesGadget/perf_event_open",
-          "TestTraceCapabilitiesGadget/nice",
-          "TestNonAuditCapabilities",
-          "TestTraceExecGadget/simple_executable",
-          "TestTraceExecGadget/large_argument_list",
-          "TestTraceExecGadget/uid_gid",
-          "TestTraceExecGadget/error",
-          "TestTraceExecGadget/ctime",
-          "TestTraceExecGadget/mount_namespace_filter_blocked",
-          "TestTraceExecGadget/failed_exec_argv0_differs_from_path",
-          "TestTraceExecGadget/successful_exec_from_thread",
-          "TestTraceExecGadget/failed_exec_from_thread",
-          "TestTraceExecTty",
-          "TestTraceFsslower",
+          "TestTraceBind",
+          "TestTraceCapabilities",
+          "TestTraceDNS",
+          "TestTraceDNSTCP",
+          "TestTraceExec",
+          "TestTraceFSSlower",
           "TestTraceGpuStarvation",
-          "TestTraceInitModuleGadget/finit_module_captures_all_events",
-          "TestTraceInitModuleGadget/finit_module_matching_filter",
-          "TestTraceInitModuleGadget/init_module_captures_all_events",
-          "TestTraceInitModuleGadget/init_module_no_matching_filter",
-          "TestTraceInitModuleGadget/init_module_matching_filter",
-          "TestTraceLinkGadget/captures_symlink_event",
-          "TestTraceLinkGadget/event_has_UID_and_GID_of_user_generating_event",
-          "TestTraceLinkGadget/captures_all_events_with_no_filters_configured",
-          "TestTraceLinkGadget/captures_no_events_with_no_matching_filter",
-          "TestTraceLinkGadget/captures_events_with_matching_filter",
-          "TestTraceMalloc",
+          "TestTraceLink",
           "TestTraceMount",
-          "TestTraceOomkill",
-          "TestFiltering/#00",
-          "TestFiltering/mntns=true,",
-          "TestFiltering/pid=true,",
-          "TestFiltering/tid=true,",
-          "TestFiltering/uid=true,",
-          "TestFiltering/gid=true,",
-          "TestFiltering/comm=true,",
-          "TestFiltering/mntns=false,",
-          "TestFiltering/pid=false,",
-          "TestFiltering/tid=false,",
-          "TestFiltering/uid=false,",
-          "TestFiltering/gid=false,",
-          "TestFiltering/comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=false,pid=false,tid=false,uid=false,gid=false,comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=false,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=false,comm=true,",
-          "TestFiltering/mntns=true,pid=true,tid=true,uid=false,gid=true,comm=true,",
-          "TestFiltering/mntns=true,pid=true,tid=false,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=true,pid=false,tid=true,uid=true,gid=true,comm=true,",
-          "TestFiltering/mntns=false,pid=true,tid=true,uid=true,gid=true,comm=true,",
-          "TestTraceOpenGadget/captures_no_events_with_no_matching_filter",
-          "TestTraceOpenGadget/captures_events_with_matching_filter",
-          "TestTraceOpenGadget/test_flags_and_mode",
-          "TestTraceOpenGadget/test_symbolic_links",
-          "TestTraceOpenGadget/test_relative_path",
-          "TestTraceOpenGadget/test_prefix_on_directory",
-          "TestTraceOpenGadget/event_has_UID_and_GID_of_user_generating_event",
-          "TestTraceOpenGadget/captures_all_events_with_no_filters_configured",
-          "TestTraceSignalGadget/kill",
-          "TestTraceSignalGadget/sigterm",
-          "TestTraceSignalGadget/sigint",
-          "TestTraceSignalGadget/sigusr1",
-          "TestTraceSignalGadget/sigusr2",
-          "TestTraceSni",
-          "TestTraceTcpGadget/captures_close",
-          "TestTraceTcpGadget/captures_connect_sync_err",
-          "TestTraceTcpGadget/captures_connect_async_err",
-          "TestTraceTcpGadget/captures_accept",
-          "TestTraceTcpdrop",
-          "TestTraceTcpretrans",
-          "TestTraceloop",
-          "TestTtysnoopFull/simple_write"
+          "TestTraceOpen",
+          "TestTraceSignal",
+          "TestTraceSNI",
+          "TestTraceTCP",
+          "TestTraceTCPretrans",
+          "TestTraceloop"
         ],
         "fail": null,
         "skip": [
-          "TestTraceLsm"
+          "TestAdviseNetworkpolicyGadget",
+          "TestTraceOomKill"
         ]
       }
-    },
+    }
+  ],
+  "gadgets-unittest_gadgets-unittest": [
     {
       "id": "21759_1",
       "run_id": "35726623406",
@@ -116389,6 +116262,133 @@
           "TestTraceTcpGadget/captures_accept",
           "TestTraceTcpGadget/captures_close",
           "TestTraceTcpGadget/captures_connect_sync_err",
+          "TestTraceTcpdrop",
+          "TestTraceTcpretrans",
+          "TestTraceloop",
+          "TestTtysnoopFull/simple_write"
+        ],
+        "fail": null,
+        "skip": [
+          "TestTraceLsm"
+        ]
+      }
+    },
+    {
+      "id": "21872_1",
+      "run_id": "36997106189",
+      "ref_name": "5750/merge",
+      "pull_request": {
+        "id": "5750",
+        "author": "dependabot[bot]",
+        "title": "ci: bump azure/setup-helm from 5.0.0 to 5.0.1"
+      },
+      "summary": {
+        "conclusion": "success",
+        "pass": [
+          "TestAdviseSeccompGadget/all_containers",
+          "TestAdviseSeccompGadget/specific_container",
+          "TestAuditSeccomp",
+          "TestBpfstatsGadget/by_gadget",
+          "TestBpfstatsGadget/by_programs",
+          "TestInspectCmd",
+          "TestExtraInfoLeak",
+          "TestInnerFields",
+          "TestDeadlock",
+          "TestFdpassGadget/basic",
+          "TestFsnotifyGadget/captures_inotify_event",
+          "TestProfileBlockio",
+          "TestProfileCpu",
+          "TestProfileCuda",
+          "TestProfileQdiscLatency",
+          "TestProfileTcprtt",
+          "TestSnapshotFileGadget/captures_events_with_no_filter",
+          "TestSnapshotFileGadget/captures_events_with_matching_filter",
+          "TestSnapshotFileGadget/captures_no_events_with_no_matching_filter",
+          "TestSnapshotProcessGadget/captures_events_with_no_filter",
+          "TestSnapshotProcessGadget/captures_no_events_with_no_matching_filter",
+          "TestSnapshotProcessGadget/captures_events_with_matching_filter",
+          "TestSnapshotProcessGadget/no_threads_are_captured",
+          "TestSnapshotSocket",
+          "TestTraceDns",
+          "TestTopBlockio",
+          "TestTopCPUThrottle",
+          "TestTopFileGadget/captures_events_with_filter",
+          "TestTopProcess",
+          "TestTopTcp",
+          "TestTraceBind/TCP4_loopback_on_fixed_port",
+          "TestTraceBind/TCP4_loopback_on_ephemeral_port",
+          "TestTraceBind/TCP6_loopback_on_fixed_port",
+          "TestTraceBind/UDP4_loopback_on_high_port",
+          "TestTraceBind/UDP6_loopback_on_ephemeral_port",
+          "TestTraceCapabilitiesGadget/raw_socket",
+          "TestTraceCapabilitiesGadget/device_access",
+          "TestTraceCapabilitiesGadget/perf_event_open",
+          "TestTraceCapabilitiesGadget/nice",
+          "TestNonAuditCapabilities",
+          "TestTraceExecGadget/mount_namespace_filter_blocked",
+          "TestTraceExecGadget/failed_exec_argv0_differs_from_path",
+          "TestTraceExecGadget/successful_exec_from_thread",
+          "TestTraceExecGadget/failed_exec_from_thread",
+          "TestTraceExecGadget/uid_gid",
+          "TestTraceExecGadget/error",
+          "TestTraceExecGadget/ctime",
+          "TestTraceExecGadget/simple_executable",
+          "TestTraceExecGadget/large_argument_list",
+          "TestTraceExecTty",
+          "TestTraceFsslower",
+          "TestTraceGpuStarvation",
+          "TestTraceInitModuleGadget/finit_module_matching_filter",
+          "TestTraceInitModuleGadget/init_module_captures_all_events",
+          "TestTraceInitModuleGadget/init_module_no_matching_filter",
+          "TestTraceInitModuleGadget/init_module_matching_filter",
+          "TestTraceInitModuleGadget/finit_module_captures_all_events",
+          "TestTraceLinkGadget/captures_all_events_with_no_filters_configured",
+          "TestTraceLinkGadget/captures_no_events_with_no_matching_filter",
+          "TestTraceLinkGadget/captures_events_with_matching_filter",
+          "TestTraceLinkGadget/captures_symlink_event",
+          "TestTraceLinkGadget/event_has_UID_and_GID_of_user_generating_event",
+          "TestTraceMalloc",
+          "TestTraceMount",
+          "TestTraceOomkill",
+          "TestFiltering/#00",
+          "TestFiltering/mntns=true,",
+          "TestFiltering/pid=true,",
+          "TestFiltering/tid=true,",
+          "TestFiltering/uid=true,",
+          "TestFiltering/gid=true,",
+          "TestFiltering/comm=true,",
+          "TestFiltering/mntns=false,",
+          "TestFiltering/pid=false,",
+          "TestFiltering/tid=false,",
+          "TestFiltering/uid=false,",
+          "TestFiltering/gid=false,",
+          "TestFiltering/comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=false,pid=false,tid=false,uid=false,gid=false,comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=true,comm=false,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=true,gid=false,comm=true,",
+          "TestFiltering/mntns=true,pid=true,tid=true,uid=false,gid=true,comm=true,",
+          "TestFiltering/mntns=true,pid=true,tid=false,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=true,pid=false,tid=true,uid=true,gid=true,comm=true,",
+          "TestFiltering/mntns=false,pid=true,tid=true,uid=true,gid=true,comm=true,",
+          "TestTraceOpenGadget/event_has_UID_and_GID_of_user_generating_event",
+          "TestTraceOpenGadget/captures_all_events_with_no_filters_configured",
+          "TestTraceOpenGadget/captures_no_events_with_no_matching_filter",
+          "TestTraceOpenGadget/captures_events_with_matching_filter",
+          "TestTraceOpenGadget/test_flags_and_mode",
+          "TestTraceOpenGadget/test_symbolic_links",
+          "TestTraceOpenGadget/test_relative_path",
+          "TestTraceOpenGadget/test_prefix_on_directory",
+          "TestTraceSignalGadget/kill",
+          "TestTraceSignalGadget/sigterm",
+          "TestTraceSignalGadget/sigint",
+          "TestTraceSignalGadget/sigusr1",
+          "TestTraceSignalGadget/sigusr2",
+          "TestTraceSni",
+          "TestTraceTcpGadget/captures_close",
+          "TestTraceTcpGadget/captures_connect_sync_err",
+          "TestTraceTcpGadget/captures_connect_async_err",
+          "TestTraceTcpGadget/captures_accept",
           "TestTraceTcpdrop",
           "TestTraceTcpretrans",
           "TestTraceloop",
